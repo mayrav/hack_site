@@ -1,0 +1,31 @@
+<h2>Projects</h2><div ng-controller="ProjectCtrl">
+	<div class="well" ng-repeat="project in projects">
+		<h3>{{project.name}} </h3> <p> {{project.description}}</p> 
+		<p ng-show="project.github_url">Github:<a href="{{project.github_url}}">{{project.github_url}}</a></p>
+		<p ng-show="project.demo_url">Demo Site:<a href="{{project.demo_url}}">{{project.demo_url}}</a></p>
+		<p ng-show="project.production_url">Production Site:<a href="{{project.github_url}}">{{project.production_url}}</a></p>
+		
+	</div>
+	<h2>Add Project</h2>
+<form>
+<div class="form-group">
+<label for="projectNameField">Name</label><input class="form-control" id="projectNameField" data-ng-model="newproject.name" placeholder="Name"/>
+</div>
+<div class="form-group">
+<label for="projectDescriptionField">Description</label> <textarea class="form-control" id="projectDescriptionField" data-ng-model="newproject.description" placeholder="description"/>
+</div>
+<div class="form-group">
+<label for="projectGithubField">
+Github URL</label> <input id="projectGithubField" class="form-control" type="url" data-ng-model="newproject.github_url" placeholder="Github URL"/>
+</div>
+<div class="form-group">
+<label for="projectDemoField">
+Demo Site URL</label> <input id="projectDemoField" class="form-control" type="url" data-ng-model="newproject.demo_url" placeholder="Demo Site URL"/>
+</div>
+<div class="form-group">
+<label for="projectProductionField">
+Production Site URL</label> <input id="projectProductionField" class="form-control" type="url" data-ng-model="newproject.production_url" placeholder="Production Site URL"/>
+</div>
+<button class="btn btn-primary" data-ng-click="addProject()">Add </button>
+</form>
+</div>

@@ -14,6 +14,10 @@ hackApp.config(['$routeProvider',
         templateUrl: 'partials/resources_admin.html',
         controller: 'ResourceCtrl'
       }).
+       when('/secretadmin_projects', {
+        templateUrl: 'partials/projects_admin.html',
+        controller: 'ProjectCtrl'
+      }).
        when('/projects', {
         templateUrl: 'partials/projects.html',
         controller: 'ProjectCtrl'

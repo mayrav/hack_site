@@ -19,14 +19,14 @@ hackControllers.controller('ResourceCtrl', function ($scope, $http, Resource) {
 
 hackControllers.controller('ProjectCtrl', function ($scope, $http, Project) {
   $scope.projects = Project.query();
-  $scope.addproject = function () {
-  	var newProject = new Project({name: $scope.newproject.name, description: $scope.newproject.description, github_url: $scope.newproject.github_url })
+  $scope.addProject = function () {
+  	var newProject = new Project({name: $scope.newproject.name, description: $scope.newproject.description, github_url: $scope.newproject.github_url, production_url: $scope.newproject.production_url, demo_url: $scope.newproject.demo_url })
   	newProject.$save();
   	$scope.projects.push(newProject)
   	
   };
 
-  $scope.deleteproject = function (id, item) {
+  $scope.deleteProject = function (id, item) {
   	Project.remove({_id: id});
   	$scope.projects.splice(item,1);
   };

@@ -4,10 +4,19 @@
 		<button  data-ng-click="deleteResource(resource._id,$index)" class="btn btn-danger">Delete</button>
 		id: {{resource._id}}
 	</div>
-<h2>Add Resource</h2>
-Name: <input data-ng-model="newresource.name" placeholder="Name"/>
-Description: <textarea data-ng-model="newresource.description" placeholder="description"/>
-Link: <input  type="url" data-ng-model="newresource.link" placeholder="Link"/>
-<button class="btn btn-primary" data-ng-click="addResource()">Add </button>
 
+<h2>Add Resource</h2>
+<form>
+<div class="form-group">
+<label for="resourceNameField">Name</label><input class="form-control" id="resourceNameField" data-ng-model="newresource.name" placeholder="Name"/>
+</div>
+<div class="form-group">
+<label for="resourceDescriptionField">Description</label> <textarea class="form-control" id="resourceDescriptionField" data-ng-model="newresource.description" placeholder="description"/>
+</div>
+<div class="form-group">
+<label for="resourceLinkField">
+Link</label> <input id="resourceLinkField" class="form-control" type="url" data-ng-model="newresource.link" placeholder="Link"/>
+</div>
+<button class="btn btn-primary" data-ng-click="addResource()">Add </button>
+</form>
 </div>
