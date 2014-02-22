@@ -1,0 +1,13 @@
+<h2>Resources</h2><div ng-controller="ResourceCtrl">
+	<div class="well" ng-repeat="resource in resources">
+		<h3>{{resource.name}} </h3> <p> {{resource.description}}</p> Link <a href="{{resource.link}}">{{resource.link}}</a></p>
+		<button  data-ng-click="deleteResource(resource._id,$index)" class="btn btn-danger">Delete</button>
+		id: {{resource._id}}
+	</div>
+<h2>Add Resource</h2>
+Name: <input data-ng-model="newresource.name" placeholder="Name"/>
+Description: <textarea data-ng-model="newresource.description" placeholder="description"/>
+Link: <input  type="url" data-ng-model="newresource.link" placeholder="Link"/>
+<button class="btn btn-primary" data-ng-click="addResource()">Add </button>
+
+</div>

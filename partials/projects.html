@@ -1,0 +1,6 @@
+<h2>Projects</h2><div ng-controller="ProjectCtrl">
+	<div class="well" ng-repeat="project in projects">
+		<h3>{{project.name}} </h3> <p> {{project.description}}</p> 
+		Github:<a href="{{project.github_url}}">{{project.github_url}}</a></p>
+	</div>
+</div>
