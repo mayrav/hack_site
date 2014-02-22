@@ -1,6 +1,6 @@
 <h2>Resources</h2><div ng-controller="ResourceCtrl">
 	<div class="well" ng-repeat="resource in resources">
-		<h3>{{resource.name}} </h3> <p> {{resource.description}}</p> Link <a href="{{resource.link}}">{{resource.link}}</a></p>
+		<h3>{{resource.name}} </h3> <p> {{resource.description}}</p>Link: <a href="{{resource.link}}">{{resource.link}}</a></p>
 		<button  data-ng-click="deleteResource(resource._id,$index)" class="btn btn-danger">Delete</button>
 		id: {{resource._id}}
 	</div>

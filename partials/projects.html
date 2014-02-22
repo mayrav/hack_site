@@ -1,8 +1,8 @@
 <h2>Projects</h2><div ng-controller="ProjectCtrl">
 	<div class="well" ng-repeat="project in projects">
 		<h3>{{project.name}} </h3> <p> {{project.description}}</p> 
-		<p ng-show="project.github_url">Github:<a href="{{project.github_url}}">{{project.github_url}}</a></p>
-		<p ng-show="project.demo_url">Demo Site:<a href="{{project.demo_url}}">{{project.demo_url}}</a></p>
-		<p ng-show="project.production_url">Production Site:<a href="{{project.github_url}}">{{project.production_url}}</a></p>
+		<p ng-show="project.github_url">Github: <a href="{{project.github_url}}">{{project.github_url}}</a></p>
+		<p ng-show="project.demo_url">Demo Site: <a href="{{project.demo_url}}">{{project.demo_url}}</a></p>
+		<p ng-show="project.production_url">Production Site: <a href="{{project.github_url}}">{{project.production_url}}</a></p>
 	</div>
 </div>
