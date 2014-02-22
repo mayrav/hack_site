@@ -6,6 +6,9 @@ var hackApp = angular.module('hackApp', [
 hackApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
+      when('/home', {
+        templateUrl: 'partials/home.html',
+      }).
       when('/resources', {
         templateUrl: 'partials/resources.html',
         controller: 'ResourceCtrl'
@@ -23,6 +26,6 @@ hackApp.config(['$routeProvider',
         controller: 'ProjectCtrl'
       }).
       otherwise({
-        redirectTo: '/'
+        redirectTo: '/home'
       });
   }]);
