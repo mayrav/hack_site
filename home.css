@@ -1,13 +1,82 @@
 /* X-Small devices */
-#quick-links-larger {
-  display:none;
-}
 #spacer-row-above-quick-links {
   height:30px;
 }
-#quick-links-underlines {
+
+#top-spacer {
+  height:16px;
+}
+
+.xs-header-background {
+  background-color:rgb(100, 115, 133);
+}
+
+.xs-nav-bar-buttons {
+  width:100%;
+  background-color:rgb(78, 93, 108);
+}
+
+#xs-nav-bar-font {
+  font-size:1.0em;
+}
+
+#spacer-row-below-header-for-sm-plus {
+  height:10px;
+}
+
+#billboard-for-xs{
+  margin:20px 0px 20px 0px;
+  background-color:rgba(100, 115, 133,1.0);
+}
+
+.main-message{
+  background:rgba(100, 115, 133,1.0);
+  font-size:20px;
+  padding:10px 0px 10px 0px;line-height:1.2em;
+}
+
+
+#center-nav-blocks {
+  display:block;
+  margin:0px auto 0px auto;
+}
+
+  #bottom-spacer {
+    height:15px;
+}
+
+#header-for-sm-plus {
   display:none;
 }
+
+#tags-xs {
+  display:block;
+}
+
+#tags-sm-plus {
+  display:none;
+}
+.navbar {
+  display:none;
+}
+
+#billboard-for-sm-plus {
+  display:none;
+}
+
+#spacer-below-billboard-for-sm-plus {
+  display:none;
+}
+
+#tag-text-for-sm-plus {
+  display:none;
+}
+
+.center-image {
+  display:block;
+  margin:0px auto 0px auto;
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -16,26 +85,72 @@
     font-size:20px;
     padding:10px 8px 10px 10px;line-height:1.2em;
   }
-  #quick-links-larger{
-    display:block;
-  }
-  #quick-links-smaller-1 {
-    display:none;
-  }
-  #quick-links-smaller-2 {
-    display:none;
-  }
-  #quick-links-smaller-3 {
-    display:none;
+
+
+  #billboard-for-sm-plus {
+  display:block;
   }
 
-  #quick-links-underlines {
+  #header-for-sm-plus {
     display:block;
+  } 
+
+  .quick-links-underlines {
+    border-bottom: 1px solid #eee;
   }
 
   #spacer-row-above-quick-links {
     height:43px;
   }
+
+  #spacer-row-below-header-for-sm-plus{
+    height:30px;
+  }
+
+  .navbar {
+    display:block;
+  }
+
+  .home-image {
+    background-image:url('Ballston.jpg');
+    height:304px;
+  }
+
+  .top-text {
+    position:absolute;
+    top:86px;z-index:10;
+  }
+
+  #spacer-below-billboard-for-sm-plus {
+    height:10px;
+    display:block;
+  }
+
+  #tags-sm-plus {
+    display:block;
+  }
+
+  #bottom-spacer {
+    height:50px;
+  }
+
+  #header-for-xs {
+    display:none;
+  }
+
+  #nav-for-xs {
+    display:none;
+  }
+
+  #billboard-for-xs{
+    display:none;
+  }
+
+  #tags-xs {
+    display:none;
+  }
+
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -45,15 +160,6 @@
     font-size:20px;
     padding:10px 6px 10px 10px;
     line-height:1.2em;
-  }
-  #quick-links-smaller-1 {
-    display:none;
-  }
-  #quick-links-smaller-2 {
-    display:none;
-  }
-  #quick-links-smaller-3 {
-    display:none;
   }
 }
 
@@ -67,14 +173,5 @@
     font-size:20px;
     padding:10px 10px 10px 10px;
     line-height:1.2em;
-  }
-  #quick-links-smaller-1 {
-    display:none;
-  }
-  #quick-links-smaller-2 {
-    display:none;
-  }
-  #quick-links-smaller-3 {
-    display:none;
   }
 }

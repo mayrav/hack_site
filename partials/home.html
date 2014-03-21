@@ -1,15 +1,26 @@
 
 <div class="container" id="main-container">
 <div class="row">
-    <div class="col-xs-12 col-sm-12" style="height:16px" >
+    <div class="col-xs-12" id="top-spacer">
     </div>
 </div>
-<div class="row">
-  <div class="col-xs-4 col-sm-4">
+
+<div class = "row" id="header-for-xs">
+  <div class="col-xs-12">
+    <div class="xs-header-background">
+      <div>
+        <img class="center-image" src="logo-rectangle-xs.png">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="header-for-sm-plus">
+  <div class="col-sm-4">
     <img src="logo-rectangle.png">
   </div>
 
-  <div class="col-xs-8 col-sm-8">
+  <div class="col-sm-8">
 
     <div class="row">
       <div class="col-xs-12 col-sm-12" >
@@ -20,63 +31,33 @@
 
     <div class="row" id="quick-links-larger">
       <div class="col-sm-4">
-        <div class="text-left">
+        <div>
           Projects
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="text-left">
+        <div>
           Project Data
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="text-left">
+        <div>
           Past Events
         </div>
       </div>
     </div>
 
-    <div class="row" id="quick-links-smaller-1">
-      <div class="col-xs-3">
-      </div>
-      <div class="col-xs-9">
-        <div>
-          Projects
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="quick-links-smaller-2">
-      <div class="col-xs-3">
-      </div>
-      <div class="col-xs-9">
-        <div>
-          Events
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="quick-links-smaller-3">
-      <div class="col-xs-3">
-      </div>
-      <div class="col-xs-9">
-        <div>
-          MeetUp
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="quick-links-underlines">
+    <div class="row">
       <div class="col-sm-4">
-        <div class="text-left" style ="border-bottom: 1px solid #eee;">
+        <div class="quick-links-underlines">
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="text-left" style ="border-bottom: 1px solid #eee;">
+        <div class="quick-links-underlines">
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="text-left" style ="border-bottom: 1px solid #eee;">
+        <div class="quick-links-underlines">
         </div>
       </div>
     </div>
@@ -85,12 +66,66 @@
 </div>
 
 
-<div class="row">
-  <div class="col-sm-2">
-    <div class="text-left" style ="height:30px;">
+<div class="row" id="spacer-row-below-header-for-sm-plus">
+  <div class="col-sm-12">
+  </div>
+</div>
+
+<div class="row" id="nav-for-xs">
+
+  <div class="col-xs-4">
+    <div class="xs-nav-bar-buttons">
+      <div>
+        <button type="button" class="btn btn-default dropdown-toggle" id="center-nav-blocks" data-toggle="dropdown">
+          Events <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#" id="xs-nav-bar-font">MeetUp</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Meetup Directions</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Past Events</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Upcomming Events</a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="xs-nav-bar-buttons">
+      <div>
+        <button type="button" class="btn btn-default dropdown-toggle" id="center-nav-blocks" data-toggle="dropdown">
+          Projects <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#" id="xs-nav-bar-font">All Projects</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Data</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">GitHub Code</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-4">
+    <div class="xs-nav-bar-buttons">
+      <div>
+        <button type="button" class="btn btn-default dropdown-toggle" id="center-nav-blocks" data-toggle="dropdown">
+          About Us <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#" id="xs-nav-bar-font">Our Blog</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Google Forum</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Who We Are</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
+
 
 <nav class="navbar navbar-default" role="navigation" style="margin-bottom:15px;">
   <div class="container-fluid" style="padding-right:0px;padding-left:0px">
@@ -116,70 +151,69 @@
   </div>
 </nav>
 
-<div class="row">
-  <div class="col-sm-12 col-lg-12">
-    <div class="home-image" style="background-image:url('Ballston.jpg');height:304px;">
-      <div class="top-text" style="position:absolute; top:86px;z-index:10;">
-        <div class="col-sm-2 col-md-2">
+<div class="row" id="billboard-for-sm-plus">
+  <div class="col-sm-12">
+    <div class="home-image">
+      <div class="top-text">
+        <div class="col-sm-2">
         </div>
-        <div class="col-sm-8 col-md-8">
+        <div class="col-sm-8">
           <div class="main-message">
               Come join developers, designers, data geeks, leaders, and idea-makers who volunteer to help Arlington, Alexandria and Fairfax governments and civic orgs adopt open technologies. 
           </div>
         </div>
-        <div class="col-sm-2 col-md-8;">
+        <div class="col-sm-2">
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-sm-12">
-    <div class="text-left" style ="height:10px;">
+<div class="row" id="billboard-for-xs">
+  <div class="col-xs-1">
+  </div>
+  <div class="col-xs-10">
+    <div class="main-message">
+      Come join developers, designers, data geeks, leaders, and idea-makers who volunteer to help Arlington, Alexandria and Fairfax governments and civic orgs adopt open technologies. 
     </div>
+  </div>
+    <div class="col-xs-1">
   </div>
 </div>
 
-<div class="row">
+<div class="row" id="spacer-below-billboard-for-sm-plus">
+  <div class="col-sm-12">
+  </div>
+</div>
+
+<div class="row" id="tag-text-for-sm-plus">
   <div class="col-sm-6">
     <div style = "text-aligh:left;padding-left:0px">
       Our Inspiration
     </div>
   </div>
-  <div class="col-sm-6" >
-    <div style="text-align:right;padding-right:24px;">
-      
-    </div>
+</div>
+
+<div id="tags-sm-plus">
+  <div style="display:inline-block">
+    <img src="code_for_america_logo.png">
+  </div>
+  <div style="display:inline-block; float:right">
+    <img src="nsf_logo-1.png">
+  </div>
+</div>
+
+<div id="tags-xs">
+  <div style="display:inline-block">
+    <img src="code_for_america_logo.png">
+  </div>
+  <div style="display:inline-block; float:right">
+    <img src="nsf_logo-xs.png">
   </div>
 </div>
 
 <div class="row">
-  <div class="col-sm-12">
-    <div class="text-left" style ="height:2px;">
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-sm-6">
-    <div style = "padding-left:0px;">
-      <img src="code_for_america_logo.png">
-    </div>
-  </div>
-  <div class="col-sm-6" >
-    <div style="float:right;padding-right:0px;">
-      <img src="nsf_logo-1.png">
-    </div>
-  </div>
-</div>
-
-
-
-<div class="row">
-  <div class="col-sm-12">
-    <div class="text-left" style ="height:50px;">
-    </div>
+  <div class="col-sm-12" id="bottom-spacer">
   </div>
 </div>
 
