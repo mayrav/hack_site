@@ -150,6 +150,9 @@
     display:none;
   }
 
+  #tag-text-for-sm-plus {
+    display:block;
+  }
 
 }
 
