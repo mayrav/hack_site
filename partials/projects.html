@@ -1,8 +1,227 @@
-<h2>Projects</h2><div ng-controller="ProjectCtrl">
+<!--<h2>Projects</h2><div ng-controller="ProjectCtrl">
 	<div class="well" ng-repeat="project in projects">
 		<h3>{{project.name}} </h3> <p> {{project.description}}</p> 
 		<p ng-show="project.github_url">Github: <a href="{{project.github_url}}">{{project.github_url}}</a></p>
 		<p ng-show="project.demo_url">Demo Site: <a href="{{project.demo_url}}">{{project.demo_url}}</a></p>
 		<p ng-show="project.production_url">Production Site: <a href="{{project.github_url}}">{{project.production_url}}</a></p>
 	</div>
+</div> -->
+<div class="container" id="main-container">
+<div class="fixed-at-top">
+<div class="row" id="header-for-sm-plus">
+  <div class="col-sm-4">
+    <img src="logo-rectangle.png">
+  </div>
+
+  <div class="col-sm-8">
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-12" >
+        <div id="spacer-row-above-quick-links">
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="quick-links-larger">
+      <div class="col-sm-4">
+        <div>
+          Projects
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          Project Data
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div>
+          Past Events
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="quick-links-underlines">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="quick-links-underlines">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="quick-links-underlines">
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<div class="row" id="spacer-row-below-header-for-sm-plus">
+  <div class="col-sm-12">
+  </div>
+</div>
+
+<nav class="navbar navbar-default" role="navigation" style="margin-bottom:15px;">
+  <div class="container-fluid" style="padding-right:0px;padding-left:0px">
+    
+    <div class="navbar-header" style="display:line-block;width:10%;">
+      <a class="navbar-brand" style="margin-left:0px;" href="#">Home</a>
+    </div>
+    <div class="navbar-header" style="float:left;width:17%;">
+      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">MeetUp</a>
+    </div>
+    <div class="navbar-header" style="display:line-block;width:21%;">
+      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">Google Forum</a>
+    </div>
+    <div class="navbar-header" style="width:21%;">
+      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">Github Code</a>
+    </div>
+    <div class="navbar-header" style="width:15%;">
+      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">Our Blog</a>
+    </div>
+    <div class="navbar-header" style="width:16%;">
+      <a class="navbar-brand" style="margin-left:0px;text-align:right;width:100%;" href="#">About Us</a>
+    </div>
+  </div>
+</nav>
+
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="white-project-background">
+    <div class="row" >
+      <div class="col-sm-11">
+        <div class = "project-container">
+          <div class="project-name">
+            NSF Patents Project
+          </div>
+          <div class="project-description">
+            Making a system for tracking NSF's patents and grants. Currently it is difficult
+            to evaluate which grants are translating into successful patents that foster business
+            in America. This system will track which patents and grants result in lasting
+            innovation.
+          </div>
+          <div>
+            <div class="by-tech-label">
+              Technology:
+            </div>
+            <div class="by-tech">
+              Ruby, Database Management  
+            </div>
+          </div>
+          <div style="clear:both;">
+          </div>
+          <div class = "proj-link-buttons">
+             <button id="proj-link-actual-buttons">Github Repository</button>
+             <button id="proj-link-actual-buttons">Wanna Help?</button>
+             <button id="proj-link-actual-buttons">Data</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <img src="nsf-patent-logo.png" style="float:right">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="proj-row-spacer-for-sm-plus">
+  <div class="col-sm-12">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="white-project-background">
+    <div class="row" >
+      <div class="col-sm-11">
+        <div class = "project-container">
+          <div class="project-name">
+            Project Play Alexandria
+          </div>
+          <div class="project-description">
+            A website that lets parents find the playground with the equipment their
+            kids want, that's close to them. Parents can comment about the playground
+            so other parents know (bug spray in October!)what to bring so their kids can have a fun time!
+          </div>
+          <div>
+            <div class="by-tech-label">
+              Technology:
+            </div>
+            <div class="by-tech">
+              html, css, Database Management
+            </div>
+          </div>
+          <div style="clear:both;">
+          </div>
+          <div class = "proj-link-buttons">
+            <button id="proj-link-actual-buttons">Web Site</button>
+            <button id="proj-link-actual-buttons">Github Repository</button>
+            <button id="proj-link-actual-buttons">Wanna Help?</button>
+            <button id="proj-link-actual-buttons">Data</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <img src="arlington-plays-intro.jpg" style="float:right">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="proj-row-spacer-for-sm-plus">
+  <div class="col-sm-12">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="white-project-background">
+    <div class="row" >
+      <div class="col-sm-11">
+        <div class = "project-container">
+          <div class="project-name">
+            Alexandria Quality of Life Project
+          </div>
+          <div class="project-description">
+            To be filled in later. Quality of Life Project Quality of Life Project Quality of Life Project
+            Quality of Life Project Quality of Life Project Quality of Life Project Quality of Life Project
+            Quality of Life Project Quality of Life Project Quality of Life Project Quality of Life Project 
+          </div>
+          <div>
+            <div class="by-tech-label">
+              Technology:
+            </div>
+            <div class="by-tech">
+              html, css, Database Management
+            </div>
+          </div>
+          <div style="clear:both;">
+          </div>
+          <div class = "proj-link-buttons">
+             <button id="proj-link-actual-buttons">Github Repository</button>
+             <button id="proj-link-actual-buttons">Wanna Help?</button>
+             <button id="proj-link-actual-buttons">Data</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <img src="alexandria-quality-of-life.jpg" style="float:right">
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="proj-row-spacer-for-sm-plus">
+  <div class="col-sm-12">
+  </div>
+</div>
+
+
+</div><!-- container -->

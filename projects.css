@@ -1,0 +1,57 @@
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .white-project-background {
+    background-color:#fff;
+    margin:0px 4px 4px 4px;
+    padding:0px 0px 8px 0px;
+  }
+
+  .project-container {
+    padding:0px 0px 0px 4px;
+  }
+  .project-name {
+    font-size:22px;
+    color:rgb(78, 93, 108);
+    font-weight:700;
+    padding:4px 0px 0px 0px;
+  }
+
+  .project-description {
+    font-size:16px;
+    font-weight:700;
+    color:#353535;
+    padding:0px 0px 0px 0px;
+  }
+
+  .by-tech-label {
+    font-size:16px;
+    color:rgb(78, 93, 108);
+    font-weight:700;
+    padding:4px 0px 0px 0px;
+    float:left;
+    display:inline-block;
+  }
+
+  .by-tech {
+    font-size:16px;
+    color:#647385;
+    font-weight:700;
+    padding:4px 0px 0px 4px;
+    float:left;
+    display:inline-block;
+  }
+
+  #proj-link-actual-buttons {
+  background-color:rgba(100, 115, 133,1.0);
+  color:#ffffff;
+  border-style:solid;
+  border-width:0px;
+  font-size:16px;
+  margin:4px 4px 4px 0px;
+ }
+
+  #proj-row-spacer-for-sm-plus {
+   height:12px;
+  }
+
+}
