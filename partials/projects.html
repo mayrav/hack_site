@@ -1,7 +1,19 @@
 <div class="container" id="main-container">
 
 
-<div class="fixed-at-top">
+<div class="row">
+    <div class="col-xs-12" id="spacer-top">
+    </div>
+</div>
+
+<div class = "row" id="header-for-xs">
+  <div class="col-xs-12" id="col-xs-12-zeroed">
+    <div class="xs-header-background">
+      <img class="center-image-xs" src="logo-rectangle-xs.png">
+    </div>
+  </div>
+</div>
+
 <div class="row" id="header-for-sm-plus">
   <div class="col-sm-4">
     <img src="logo-rectangle.png">
@@ -16,35 +28,18 @@
       </div>
     </div>
 
-    <div class="row" id="quick-links-larger">
+    <div class="row" id="quick-links-container-larger">
       <div class="col-sm-4">
-        <div>
-          All Projects
-        </div>
+          <a href="http://www.meetup.com/Arlington-Code-Shop/" class="quick-link-sm-plus">MeetUp</a>
       </div>
       <div class="col-sm-4">
         <div>
-          Up Coming Events
+          <a href="#" class="quick-link-sm-plus">Google Forum</a>
         </div>
       </div>
       <div class="col-sm-4">
         <div>
-          Past Events
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="quick-links-underlines">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="quick-links-underlines">
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="quick-links-underlines">
+          <a href="#" class="quick-link-sm-plus">Our Blog</a>
         </div>
       </div>
     </div>
@@ -52,46 +47,103 @@
   </div>
 </div>
 
-<div class="row" id="spacer-row-below-header-for-sm-plus">
+<div class="row" id="spacer-row-below-header">
   <div class="col-sm-12">
   </div>
 </div>
 
-<nav class="navbar navbar-default" role="navigation" style="margin-bottom:15px;">
-  <div class="container-fluid" style="padding-right:0px;padding-left:0px">
-    
-    <div class="navbar-header" style="display:line-block;width:10%;">
-      <a class="navbar-brand" style="margin-left:0px;" href="#">Home</a>
-    </div>
-    <div class="navbar-header" style="float:left;width:17%;">
-      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">MeetUp</a>
-    </div>
-    <div class="navbar-header" style="display:line-block;width:21%;">
-      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">Google Forum</a>
-    </div>
-    <div class="navbar-header" style="width:21%;">
-      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">Github Code</a>
-    </div>
-    <div class="navbar-header" style="width:15%;">
-      <a class="navbar-brand" style="margin-left:0px;text-align:center;width:100%;" href="#">Our Blog</a>
-    </div>
-    <div class="navbar-header" style="width:16%;">
-      <a class="navbar-brand" style="margin-left:0px;text-align:right;width:100%;" href="#">About Us</a>
+<div class="row" id="nav-for-xs" style="background-color:rgb(43,62,80);">
+  <div class="col-xs-4" style="background-color:rgb(43,62,80);padding:0px 10px 0px 0px">
+    <div class="xs-nav-bar-buttons" style="background-color:rgb(78,93,108)">
+        <button type="button" class="btn btn-default dropdown-toggle" id="center-nav-blocks-xs" data-toggle="dropdown">
+          Events <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="http://www.meetup.com/Arlington-Code-Shop/" id="xs-nav-bar-font">MeetUp</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Meetup Directions</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Upcoming Events</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Past Events</a></li>
+        </ul>
     </div>
   </div>
-</nav>
+  <div class="col-xs-4" style="background-color:rgb(43,62,80);padding:0px 0px 0px 0px">
+    <div class="xs-nav-bar-buttons"style="background-color:rgb(78,93,108);">
+      
+        <button type="button" class="btn btn-default dropdown-toggle" id="center-nav-blocks-xs" data-toggle="dropdown">
+          Project Info <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#/projects" id="xs-nav-bar-font">All Projects</a></li>
+          <li class="divider"></li>
+          <li><a href="#/resources" id="xs-nav-bar-font">Resources</a></li>
+        </ul>
+      </div>
+    
+  </div>
+  <div class="col-xs-4" style="background-color:rgb(43,62,80);padding:0px 0px 0px 10px;">
+    <div class="xs-nav-bar-buttons">
+        <button type="button" class="btn btn-default dropdown-toggle" id="center-nav-blocks-xs" data-toggle="dropdown">
+          About Us <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#" id="xs-nav-bar-font">Our Blog</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Google Forum</a></li>
+          <li class="divider"></li>
+          <li><a href="#" id="xs-nav-bar-font">Who We Are</a></li>
+        </ul>
+      
+    </div>
+  </div>
+</div>
 
-</div><!--fixed top-->
+<div class="row" id="nav-for-sm-plus">
+  <div class="col-sm-2" style="text-align-left;padding-right:0px">
+    <div class="nav-item-on-left" style="text-align-left; left-margin:0px;padding-left:10px;padding-right:0px">
+      <a href="#/home" class="nav-bar-ref-for-sm-plus">Home</a>
+    </div>
+  </div>
 
+  <div class="col-sm-2" style="padding-right:0px; padding-left:0px">
+    <div class="nav-item-on-left" style="padding-right:20px;text-align:center;">
+      <a href="#/projects" class="nav-bar-ref-for-sm-plus-on-curr-page">Projects</a>
+    </div>
+  </div>
+
+  <div class="col-sm-8">
+    <div class="row">
+      <div class="col-sm-4" id="nav-item-on-right">
+        <div>
+          <a href="#" class="nav-bar-ref-for-sm-plus">Events</a>
+        </div>
+      </div>
+      <div class="col-sm-4" id="nav-item-on-right">
+        <div>
+          <a href="#" class="nav-bar-ref-for-sm-plus">Resources</a>
+        </div>
+      </div>
+      <div class="col-sm-4" style="padding-left:0px;padding-right:15px;">
+        <div id="nav-item-on-right" style="padding-right:10px;text-align:right;">
+          <a href="#" class="nav-bar-ref-for-sm-plus">About Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" id="spacer-row-below-nav">
+  <div class="col-sm-12">
+  </div>
+</div>
 
 <div ng-controller="ProjectCtrl">
   <div ng-repeat="project in projects">
 
-<div class="row">
-  <div class="col-sm-12">
-    <div class="white-project-background">
-    <div class="row" >
-      <div class="col-sm-11">
+<div class="row" id="project-row">
+      <div class="col-xs-11 col-sm-11" id="col-zeroed">
         <div class = "project-container">
           <div class="project-name">
             {{project.name}}
@@ -99,7 +151,7 @@
           <div class="project-description">
             {{project.description}}
           </div>
-          <div>
+          <div class="technology-container">
             <div class="by-tech-label">
               Technology:
             </div>
@@ -112,16 +164,15 @@
           <div class = "proj-links-container">
              <a  id="proj-link" href="{{project.github_url}}">Github Repository</a>
              <a id="proj-link">Wanna Help?</a>
-             <a id="proj-link-actual-buttons">Data</a>
+             <a id="proj-link">Data</a>
           </div>
         </div>
       </div>
-      <div class="col-sm-1">
-        <img src="nsf-patent-logo.png" style="float:right">
+      <div class="col-xs-1 col-sm-1" id="col-zeroed">
+        <div>
+          <img src="nsf-patent-logo.png" style="float:right" >
+        </div>
       </div>
-    </div>
-    </div>
-  </div>
 </div>
 
   </div>

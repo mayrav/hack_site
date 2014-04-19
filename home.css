@@ -1,32 +1,69 @@
-/* X-Small devices */
-#spacer-row-above-quick-links {
-  height:30px;
+/* X-Small and X-Small Plus devices 
+ Note items specifically for X Small are marked with xs*/
+
+/*-X Small devices turn off items for Small and Small Plus sizes*/
+#billboard-for-sm-plus {
+  display:none;
 }
 
-#top-spacer {
-  height:16px;
+#header-for-sm-plus {
+  display:none;
 }
 
-.xs-header-background {
-  background-color:rgb(100, 115, 133);
+#nav-for-sm-plus {
+  display:none;
 }
 
-.xs-nav-bar-buttons {
-  width:100%;
-  background-color:rgb(78, 93, 108);
+#spacer-below-billboard-for-sm-plus {
+  display:none;
 }
 
-#xs-nav-bar-font {
-  font-size:1.0em;
+#tags-sm-plus {
+  display:none;
 }
 
-#spacer-row-below-header-for-sm-plus {
-  height:10px;
+/* also turn off items for less than 600px*/
+#billboard-for-xs-less-600 {
+  display:none;
 }
+/* End Turn Off Items */
+
+/* X-Small devices Continued...*/
 
 #billboard-for-xs{
-  margin:20px 0px 20px 0px;
+  margin:15px 0px 20px 0px;
   background-color:rgba(100, 115, 133,1.0);
+  display:block;
+}
+
+
+
+#bottom-spacer {
+    height:15px;
+}
+
+.center-image-xs {
+  display:block;
+  margin:0px auto 0px auto;
+}
+
+#center-nav-blocks-xs {
+  display:block;
+  text-align:center;
+  margin:0px auto 0px auto;
+  padding:6px 0px 6px 0px;
+}
+
+#col-xs-12-zeroed {
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+
+#header-for-xs {
+  margin-left:0px;
+  margin-right:0px;
+  padding:0px 0px 0px 0px;
+  background-color:#700;
 }
 
 .main-message{
@@ -35,54 +72,98 @@
   padding:10px 0px 10px 0px;line-height:1.2em;
 }
 
-
-#center-nav-blocks {
-  display:block;
-  margin:0px auto 0px auto;
+.meetup-link {
+  border-color:rgb(78, 93, 108);
+  border-style:solid;
+  border-width:1px;
+  background-color:#556589;
+  font-size:18px;
+  font-weight:700;
+  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
+  padding:0px 6px 0px 6px;
+  white-space:nowrap;
 }
 
-  #bottom-spacer {
+a.meetup-link:link{color:#fff;text-decoration:none;}
+a.meetup-link:visited {background-color:#556589;color:#fff;}
+a.meetup-link:hover {background-color:rgb(43, 62, 80);color:#fff;}
+a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
+
+#nav-for-xs {
+  margin-left:0px;
+  margin-right:0px;
+  padding:0px 0px 0px 0px;
+}
+
+#row-zeroed {
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+
+#spacer-row-below-header{
     height:15px;
-}
+  }
 
-#header-for-sm-plus {
-  display:none;
+#spacer-top {
+  height:16px;
 }
 
 #tags-xs {
   display:block;
 }
 
-#tags-sm-plus {
-  display:none;
-}
-#nav-for-sm-plus {
-  display:none;
+.xs-header-background {
+  background-color:rgb(100, 115, 133);
+  padding:0px 0px 0px 0px;
 }
 
-#billboard-for-sm-plus {
-  display:none;
+.xs-nav-bar-buttons {
+  /*width:100%;*/
+  background-color:rgb(78, 93, 108);
 }
 
-#spacer-below-billboard-for-sm-plus {
-  display:none;
+#xs-nav-bar-font {
+  font-size:1.0em;
 }
 
-#tag-text-for-sm-plus {
-  display:none;
+@media (max-width: 500px) {
+  #billboard-for-xs-less-600{
+    margin:15px 0px 20px 0px;
+    background-color:rgba(100, 115, 133,1.0);
+    display:block;
+  }
+  #billboard-for-xs {
+    display:none;
+  }
 }
 
-.center-image {
-  display:block;
-  margin:0px auto 0px auto;
-}
+
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  #billboard-for-sm-plus {
+    display:block;
+  }
+
+  #header-for-sm-plus {
+    display:block;
+  }
+
+  .home-image {
+    background-image:url('Ballston.jpg');
+    height:304px;
+  }
+
   .main-message{
     background:rgba(100, 115, 133, .95);
     font-size:22px;
     padding:10px 8px 10px 10px;line-height:1.2em;
+  }
+
+  #nav-for-sm-plus {
+    display:block;
   }
 
   .nav-item-on-left {
@@ -98,12 +179,23 @@
     padding:6px 0px 6px 0px;
   }
 
-  a.nav-bar-ref-for-sm-plus-on-page {
+  a.nav-bar-ref-for-sm-plus-on-curr-page {
     font-size:20px;
     padding:6px 6px 6px 6px;
     line-height:1.2em;
     text-decoration:none;
-    color:#fff;
+    color:#d0d5d8;
+    font-weight:400;
+  }
+
+  a.nav-bar-ref-for-sm-plus-on-curr-page:hover {
+    font-size:20px;
+    padding:6px 6px 6px 6px;
+    line-height:1.2em;
+    text-decoration:none;
+    color:#d0d5d8;
+    font-weight:400;
+    background-color:#647385;
   }
 
   a.nav-bar-ref-for-sm-plus:link { 
@@ -113,88 +205,64 @@
     line-height:1.2em;
     text-decoration:none;
   }
-  a.nav-bar-ref-for-sm-plus:hover {
-    padding:6px 6px 6px 6px;
-    background-color:#647385;
-    color:#fff;}
   a.nav-bar-ref-for-sm-plus:active {
     padding:6px 6px 6px 6px;
     background-color:#647385;
     color:#fff;}
-    a.nav-bar-ref-for-sm-plus:visited { 
+  a.nav-bar-ref-for-sm-plus:hover {
+    padding:6px 6px 6px 6px;
+    background-color:#647385;
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:visited { 
     font-size:20px;
     padding:6px 6px 6px 6px;
     color:#d0d5d8;
   }
 
-
-  .meetup-link {
-    border-color:rgb(78, 93, 108);
-    border-style:solid;
-    border-width:1px;
-    background-color:#556589;
-    font-size:18px;
-    font-weight:700;
-    margin:4px 4px 4px 4px;
-    padding:0px 6px 0px 6px;
-  }
-
-  a.meetup-link:link{color:#fff;text-decoration:none;}
-  a.meetup-link:visited {background-color:#556589;color:#fff;}
-  a.meetup-link:hover {background-color:rgb(43, 62, 80);color:#fff;}
-  a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
-
-
-
-  #billboard-for-sm-plus {
-  display:block;
-  }
-
-  #header-for-sm-plus {
-    display:block;
-  }
-
-
-  a.quick-link-sm-plus:link{margin-left:0;
-                          margin-right:0;
-                          padding-left:0;
-                          padding-right:0;
-                          display:block;
-                          width:100%;
-                          border-width:0px 0px 1px 0px;
-                          border-style:solid;
-                          border-color:#d0d5d8;
-                          color:#d0d5d8;
-                          font-size:16px;
-                          text-decoration:none;}
-  a.quick-link-sm-plus:visited {color:#d0d5d8;}
-  a.quick-link-sm-plus:hover {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
-  a.quick-link-sm-plus:active {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
-
   .quick-links-underlines {
     border-bottom: 1px solid #eee;
   }
 
-  #spacer-row-above-quick-links {
-    height:43px;
-  }
-
-  #spacer-row-below-header-for-sm-plus{
-    height:30px;
-  }
-
-  #nav-for-sm-plus {
+  a.quick-link-sm-plus:link{
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
     display:block;
+    width:100%;
+    border-width:0px 0px 1px 0px;
+    border-style:solid;
+    border-color:#d0d5d8;
+    color:#d0d5d8;
+    font-size:16px;
+    text-decoration:none;
+    font-weight:700;
   }
+  a.quick-link-sm-plus:active {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
+  a.quick-link-sm-plus:hover {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
+  a.quick-link-sm-plus:visited {color:#d0d5d8;}
 
-  .home-image {
-    background-image:url('Ballston.jpg');
-    height:304px;
+  a.quick-link-curr-page-sm-plus {
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+    display:block;
+    width:100%;
+    border-width:0px 0px 1px 0px;
+    border-style:solid;
+    border-color:#fff;
+    color:#fff;
+    font-size:16px;
+    font-weight:700;
+    text-decoration:none;
   }
+  a.quick-link-curr-page-sm-plus:active {background-color:rgb(78, 93, 108); color:#fff;border-color:#fff;}
+  a.quick-link-curr-page-sm-plus:hover {background-color:rgb(78, 93, 108); color:#fff;border-color:#fff;}
+  a.quick-link-curr-page-sm-plus:visited {color:#d0d5d8;}
 
-  .top-text {
-    position:absolute;
-    top:86px;z-index:10;
+  #spacer-row-above-quick-links {
+    height:30px;
   }
 
   #spacer-below-billboard-for-sm-plus {
@@ -202,12 +270,30 @@
     display:block;
   }
 
+  #spacer-row-below-header{
+    height:30px;
+  }
+
+  #spacer-at-bottom {
+    height:50px;
+  }
+
   #tags-sm-plus {
     display:block;
   }
 
-  #bottom-spacer {
-    height:50px;
+  #inspiration-container {
+    display:block;
+  }
+
+  .top-text {
+    position:absolute;
+    top:86px;z-index:10;
+  }
+
+  /* Hide items that are only for XS */
+  #billboard-for-xs{
+    display:none;
   }
 
   #header-for-xs {
@@ -218,17 +304,10 @@
     display:none;
   }
 
-  #billboard-for-xs{
-    display:none;
-  }
-
   #tags-xs {
     display:none;
   }
-
-  #tag-text-for-sm-plus {
-    display:block;
-  }
+  /* End hiding items that are only for XS */
 
 }
 
