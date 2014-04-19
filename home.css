@@ -56,7 +56,7 @@
 #tags-sm-plus {
   display:none;
 }
-.navbar {
+#nav-for-sm-plus {
   display:none;
 }
 
@@ -121,6 +121,11 @@
     padding:6px 6px 6px 6px;
     background-color:#647385;
     color:#fff;}
+    a.nav-bar-ref-for-sm-plus:visited { 
+    font-size:20px;
+    padding:6px 6px 6px 6px;
+    color:#d0d5d8;
+  }
 
 
   .meetup-link {
@@ -178,7 +183,7 @@
     height:30px;
   }
 
-  .navbar {
+  #nav-for-sm-plus {
     display:block;
   }
 
