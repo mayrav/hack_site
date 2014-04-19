@@ -77,7 +77,6 @@
   margin:0px auto 0px auto;
 }
 
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .main-message{
@@ -86,17 +85,60 @@
     padding:10px 8px 10px 10px;line-height:1.2em;
   }
 
-  #meetup-link {
-    background-color:#3385ff;
-    color:#ffffff;
+  .nav-item-on-left {
+    background-color:rgba(78,93,108,1.0);
+    line-height:1.2em;
+    padding:6px 0px 6px 0px;
+  }
+
+  #nav-item-on-right {
+    background-color:rgba(78,93,108,1.0);
+    text-align:center;
+    line-height:1.2em;
+    padding:6px 0px 6px 0px;
+  }
+
+  a.nav-bar-ref-for-sm-plus-on-page {
+    font-size:20px;
+    padding:6px 6px 6px 6px;
+    line-height:1.2em;
+    text-decoration:none;
+    color:#fff;
+  }
+
+  a.nav-bar-ref-for-sm-plus:link { 
+    font-size:20px;
+    padding:6px 6px 6px 6px;
+    color:#d0d5d8;
+    line-height:1.2em;
+    text-decoration:none;
+  }
+  a.nav-bar-ref-for-sm-plus:hover {
+    padding:6px 6px 6px 6px;
+    background-color:#647385;
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:active {
+    padding:6px 6px 6px 6px;
+    background-color:#647385;
+    color:#fff;}
+
+
+  .meetup-link {
+    border-color:rgb(78, 93, 108);
     border-style:solid;
     border-width:1px;
-    border-color:#fff;
+    background-color:#556589;
     font-size:18px;
     font-weight:700;
     margin:4px 4px 4px 4px;
-    padding:2px 4px 2px 4px;
+    padding:0px 6px 0px 6px;
   }
+
+  a.meetup-link:link{color:#fff;text-decoration:none;}
+  a.meetup-link:visited {background-color:#556589;color:#fff;}
+  a.meetup-link:hover {background-color:rgb(43, 62, 80);color:#fff;}
+  a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
+
 
 
   #billboard-for-sm-plus {
@@ -105,7 +147,24 @@
 
   #header-for-sm-plus {
     display:block;
-  } 
+  }
+
+
+  a.quick-link-sm-plus:link{margin-left:0;
+                          margin-right:0;
+                          padding-left:0;
+                          padding-right:0;
+                          display:block;
+                          width:100%;
+                          border-width:0px 0px 1px 0px;
+                          border-style:solid;
+                          border-color:#d0d5d8;
+                          color:#d0d5d8;
+                          font-size:16px;
+                          text-decoration:none;}
+  a.quick-link-sm-plus:visited {color:#d0d5d8;}
+  a.quick-link-sm-plus:hover {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
+  a.quick-link-sm-plus:active {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
 
   .quick-links-underlines {
     border-bottom: 1px solid #eee;
