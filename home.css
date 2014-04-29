@@ -26,6 +26,9 @@
 #billboard-for-xs-less-600 {
   display:none;
 }
+
+
+
 /* End Turn Off Items */
 
 /* X-Small devices Continued...*/
@@ -59,11 +62,39 @@
   padding:0px 0px 0px 0px;
 }
 
+/*maybe delete  next three
+*/#col-left {
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+  height:130px;
+}
+
+#col-middle {
+  padding:0px 0px 0px 0px;
+  margin:0px 0px 0px 0px;
+  height:130px;
+}
+
+#col-right {
+  padding:4px 0px 4px 4px;
+  margin:0px 0px 0px 0px;
+  height:130px;
+}
+
+#general-row-spacer {
+    height:12px;
+}
+
+
 #header-for-xs {
   margin-left:0px;
   margin-right:0px;
   padding:0px 0px 0px 0px;
   background-color:#700;
+}
+
+#inspiration-container-xs {
+  display:block;
 }
 
 .main-message{
@@ -100,7 +131,7 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
   padding:0px 0px 0px 0px;
 }
 
-#spacer-row-below-header{
+#spacer-row-below-header-xs{
     height:15px;
   }
 
@@ -151,15 +182,30 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     display:block;
   }
 
-  .home-image {
-    background-image:url('Ballston.jpg');
-    height:304px;
+  .row-one-image {
+    background-image:url('images/discovery01.jpg');
+    height:126px;
   }
 
-  .main-message{
-    background:rgba(100, 115, 133, .95);
+  .row-two-image {
+    background-image:url('images/silverInternet08.jpg');
+    height:126px;
+  }
+
+  .row-one-message{
+    background:rgba(100, 115, 133, .85);
     font-size:22px;
+    font-weight:400;
     padding:10px 8px 10px 10px;line-height:1.2em;
+    margin:27px 0px 0px 0px;
+  }
+
+  .row-two-message{
+    background:rgba(100, 115, 133, .85);
+    font-size:22px;
+    font-weight:400;
+    padding:10px 8px 10px 10px;line-height:1.2em;
+    margin:25px 0px 0px 0px;
   }
 
   #nav-for-sm-plus {
@@ -177,6 +223,18 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     text-align:center;
     line-height:1.2em;
     padding:6px 0px 6px 0px;
+  }
+
+  #above-nav-bar-spacer {
+        height:6px;
+  }
+
+  .nav-item-on-center {
+    /*background-color:rgba(78,93,108,1.0);*/
+    line-height:1.2em;
+    /*padding:6px 0px 6px 0px;*/
+    text-align:center;
+    font-size:24px;
   }
 
   a.nav-bar-ref-for-sm-plus-on-curr-page {
@@ -216,6 +274,27 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
   a.nav-bar-ref-for-sm-plus:visited { 
     font-size:20px;
     padding:6px 6px 6px 6px;
+    color:#d0d5d8;
+  }
+
+  a.nav-bar-ref-for-sm-plus-home-page:link { 
+    font-size:18px;
+    padding:3px 6px 3px 6px;
+    color:#d0d5d8;
+    line-height:1.2em;
+    text-decoration:none;
+  }
+  a.nav-bar-ref-for-sm-plus-home-page:active {
+    padding:3px 6px 3px 6px;
+    background-color:#647385;
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus-home-page:hover {
+    padding:3px 6px 3px 6px;
+    background-color:#647385;
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus-home-page:visited { 
+    font-size:18px;
+    padding:3px 6px 3px 6px;
     color:#d0d5d8;
   }
 
@@ -270,9 +349,7 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     display:block;
   }
 
-  #spacer-row-below-header{
-    height:30px;
-  }
+
 
   #spacer-at-bottom {
     height:50px;
@@ -282,14 +359,7 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     display:block;
   }
 
-  #inspiration-container {
-    display:block;
-  }
 
-  .top-text {
-    position:absolute;
-    top:86px;z-index:10;
-  }
 
   /* Hide items that are only for XS */
   #billboard-for-xs{
@@ -307,6 +377,14 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
   #tags-xs {
     display:none;
   }
+
+  #spacer-row-below-header-xs{
+    display:none;
+  }
+
+  #inspiration-container-xs {
+  display:none;
+}
   /* End hiding items that are only for XS */
 
 }
