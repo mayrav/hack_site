@@ -86,6 +86,13 @@
   padding:0px 0px 6px 0px;
 }
 
+  .row-one-projects-message{
+    background:rgba(100, 115, 133, .85);
+    font-size:24px;
+    font-weight:400;
+    padding:10px 8px 10px 10px;line-height:1.2em;
+    margin:36px 0px 0px 0px;
+  }
 
 /*
   .fixed-at-top {

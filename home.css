@@ -27,7 +27,9 @@
   display:none;
 }
 
-
+#row-zeroed-for-sm-plus{
+  display:none;
+}
 
 /* End Turn Off Items */
 
@@ -38,8 +40,6 @@
   background-color:rgba(100, 115, 133,1.0);
   display:block;
 }
-
-
 
 #bottom-spacer {
     height:15px;
@@ -85,7 +85,6 @@
     height:12px;
 }
 
-
 #header-for-xs {
   margin-left:0px;
   margin-right:0px;
@@ -104,21 +103,21 @@
 }
 
 .meetup-link {
-  border-color:rgb(78, 93, 108);
+  border-color:#838F9D;
   border-style:solid;
   border-width:1px;
-  background-color:#556589;
+  background-color:#838F9D;
   font-size:18px;
   font-weight:700;
   margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
-  padding:0px 6px 0px 6px;
+  padding:1px 7px 1px 7px;
   white-space:nowrap;
 }
 
 a.meetup-link:link{color:#fff;text-decoration:none;}
-a.meetup-link:visited {background-color:#556589;color:#fff;}
-a.meetup-link:hover {background-color:rgb(43, 62, 80);color:#fff;}
-a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
+a.meetup-link:visited {background-color:#838F9D;color:#fff;}
+a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
 #nav-for-xs {
   margin-left:0px;
@@ -182,32 +181,28 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     display:block;
   }
 
+  #row-zeroed-for-sm-plus {
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    display:block;
+  }
+
   .row-one-image {
     background-image:url('images/discovery01.jpg');
     height:126px;
   }
 
-  .row-two-image {
-    background-image:url('images/silverInternet11.jpg');
-    height:264px;
-  }
-
-  #we-are-image {
-    background-image:url('images/whoWeAre04.png');
-   /* background-color:#000;*/
-    height:126px;
-  }
-
-  #bee-image {
-    background-image:url('images/bee01.jpg');
-    height:126px;
-  }
   .row-one-message{
     background:rgba(100, 115, 133, .85);
     font-size:22px;
     font-weight:400;
     padding:10px 8px 10px 10px;line-height:1.2em;
     margin:25px 0px 0px 0px;
+  }
+
+  .row-two-image {
+    background-image:url('images/silverInternet11.jpg');
+    height:264px;
   }
 
   .row-two-message{
@@ -217,6 +212,31 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     padding:10px 8px 10px 10px;line-height:1.2em;
     margin:80px 0px 0px 0px;
   }
+
+  #we-are-image {
+    background-image:url('images/whoWeAre04.png');
+    height:126px;
+    border-color:#fff;
+  }
+
+  #bee-image {
+    background-image:url('images/bee01.jpg');
+    height:126px;
+    border-color:#fff;
+  }
+
+  .transparent-link {
+    border-color:#838F9D;
+    border-style:solid;
+    border-width:1px;
+    background-color:#838F9D;
+    height:126px;
+    width:171px;
+  }
+
+
+
+  
 
   #nav-for-sm-plus {
     display:block;
@@ -359,8 +379,6 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     display:block;
   }
 
-
-
   #spacer-at-bottom {
     height:50px;
   }
@@ -401,6 +419,9 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  #main-container {
+    width:750px;
+  }
   .main-message{
     background:rgba(100, 115, 133, .95);
     font-size:20px;
@@ -412,7 +433,7 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #main-container {
-    width:970px;
+    width:750px;
   }
   .main-message{
     background:rgba(100, 115, 133, .95);
