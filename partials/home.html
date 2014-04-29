@@ -164,13 +164,16 @@
   </div>
   <div class="col-sm-3" style="padding:0px 0px 0px 9px">
     <div class="row" id="row-zeroed">
-      <div class="col-sm-12" id = "bee-image" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;">
-        <a class="transarent-link" href="#/projects"><img src="images/link-transparent.png" alt="HTML tutorial" width="171" height="126"></a>
+      <div class="col-sm-12" id = "we-are-image" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;">
+        <a href="http://codeforamerica.org/brigade/"><img src="images/link-transparent.png" alt="HTML tutorial" width="171" height="126"></a>
       </div>
     </div>
     <div class="row" id="row-zeroed">
-      <div class="col-sm-12" id = "we-are-image" style="padding:0px 0px 0px 0px; margin:12px 0px 0px 0px;">
-        <a class="transarent-link" href="http://codeforamerica.org/brigade/"><img src="images/link-transparent.png" alt="HTML tutorial" width="171" height="126"></a>
+      <div class="col-sm-12" id = "bee-image" style="padding:0px 0px 0px 0px; margin:12px 0px 0px 0px;">
+        <div id="bee-overlay">
+          Projects
+        </div>
+        <a href="#/projects"><img src="images/link-transparent.png" alt="HTML tutorial" width="171" height="126"></a>
       </div>
     </div>
   </div>
@@ -184,22 +187,23 @@
 <div class ="row" id="row-zeroed-for-sm-plus">
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/home" class="nav-bar-ref-for-sm-plus-home-page">Home</a>
+      <a href="#/home" class="nav-bar-ref-for-sm-plus">Home</a>
     </div>
   </div>
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="http://www.meetup.com/Arlington-Code-Shop/" class="nav-bar-ref-for-sm-plus-home-page">MeetUp</a>
+      <a href="#/projects" class="nav-bar-ref-for-sm-plus">Projects</a>      
     </div>
   </div>
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/home" class="nav-bar-ref-for-sm-plus-home-page">Google Forum</a>
+      <a href="#/home" class="nav-bar-ref-for-sm-plus">Google Forum</a>
     </div>
   </div>
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/home" class="nav-bar-ref-for-sm-plus-home-page">About Us</a>
+      <a href="#/resources" class="nav-bar-ref-for-sm-plus">Resources</a>
+      
     </div>
   </div>
 </div>
@@ -207,22 +211,22 @@
 <div class ="row" id="row-zeroed-for-sm-plus">
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/projects" class="nav-bar-ref-for-sm-plus-home-page">Projects</a>
+<a href="http://www.meetup.com/Arlington-Code-Shop/" class="nav-bar-ref-for-sm-plus">MeetUp</a>
     </div>
   </div>
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/home" class="nav-bar-ref-for-sm-plus-home-page">Events</a>
+      <a href="#/home" class="nav-bar-ref-for-sm-plus">Events</a>
     </div>
   </div>
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/home" class="nav-bar-ref-for-sm-plus-home-page">Blog</a>
+      <a href="#/home" class="nav-bar-ref-for-sm-plus">Blog</a>
     </div>
   </div>
   <div class="col-sm-3">
     <div class="nav-item-on-center">
-      <a href="#/resources" class="nav-bar-ref-for-sm-plus-home-page">Resources</a>
+      <a href="#/home" class="nav-bar-ref-for-sm-plus">About Us</a>
     </div>
   </div>
 </div>
@@ -256,10 +260,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   $("#bee-image").hover(
     function(){
-      $("#bee-image").css("background-image","url(images/projects-image02.png)");
+      $("#bee-overlay").css("visibility","visible");
     },
     function () {
-      $("#bee-image").css("background-image","url(images/bee01.jpg)");
+      $("#bee-overlay").css("visibility","hidden");
     }
   );
 });

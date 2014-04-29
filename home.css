@@ -1,48 +1,25 @@
+/*   dark-background-blue      rgb(43, 62, 80)     */
+/*   lighter-background-blue   rgb(78, 93, 108)    */
+/*   light-forefront-grey-blue rgb(100, 115, 133)  */
 /* X-Small and X-Small Plus devices 
  Note items specifically for X Small are marked with xs*/
 
-/*-X Small devices turn off items for Small and Small Plus sizes*/
-#billboard-for-sm-plus {
-  display:none;
-}
-
-#header-for-sm-plus {
-  display:none;
-}
-
-#nav-for-sm-plus {
-  display:none;
-}
-
-#spacer-below-billboard-for-sm-plus {
-  display:none;
-}
-
-#tags-sm-plus {
-  display:none;
-}
-
-/* also turn off items for less than 600px*/
-#billboard-for-xs-less-600 {
-  display:none;
-}
-
+/* X=SMALL */
+/* Turn Off Items for small and small-plus sizes */
 #row-zeroed-for-sm-plus{
   display:none;
 }
+/* also turn off items for less than 600px*/
+#billboard-for-xs-less-600{
+  display:none;
+}
+/* Turn Off Items END*/
 
-/* End Turn Off Items */
-
-/* X-Small devices Continued...*/
-
+/* X-SMALL devices Continued...*/
 #billboard-for-xs{
   margin:15px 0px 20px 0px;
   background-color:rgba(100, 115, 133,1.0);
   display:block;
-}
-
-#bottom-spacer {
-    height:15px;
 }
 
 .center-image-xs {
@@ -62,29 +39,6 @@
   padding:0px 0px 0px 0px;
 }
 
-/*maybe delete  next three
-*/#col-left {
-  padding:0px 0px 0px 0px;
-  margin:0px 0px 0px 0px;
-  height:130px;
-}
-
-#col-middle {
-  padding:0px 0px 0px 0px;
-  margin:0px 0px 0px 0px;
-  height:130px;
-}
-
-#col-right {
-  padding:4px 0px 4px 4px;
-  margin:0px 0px 0px 0px;
-  height:130px;
-}
-
-#general-row-spacer {
-    height:12px;
-}
-
 #header-for-xs {
   margin-left:0px;
   margin-right:0px;
@@ -96,46 +50,14 @@
   display:block;
 }
 
-.main-message{
-  background:rgba(100, 115, 133,1.0);
-  font-size:20px;
-  padding:10px 0px 10px 0px;line-height:1.2em;
-}
-
-.meetup-link {
-  border-color:#838F9D;
-  border-style:solid;
-  border-width:1px;
-  background-color:#838F9D;
-  font-size:18px;
-  font-weight:700;
-  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
-  padding:1px 7px 1px 7px;
-  white-space:nowrap;
-}
-
-a.meetup-link:link{color:#fff;text-decoration:none;}
-a.meetup-link:visited {background-color:#838F9D;color:#fff;}
-a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
-a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
-
 #nav-for-xs {
   margin-left:0px;
   margin-right:0px;
   padding:0px 0px 0px 0px;
 }
 
-#row-zeroed {
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-}
-
 #spacer-row-below-header-xs{
     height:15px;
-  }
-
-#spacer-top {
-  height:16px;
 }
 
 #tags-xs {
@@ -156,6 +78,44 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   font-size:1.0em;
 }
 
+/* for all sized devices */
+
+.main-message{
+  background:rgba(100, 115, 133,1.0);
+  font-size:20px;
+  padding:10px 0px 10px 0px;line-height:1.2em;
+}
+
+#general-row-spacer {
+  height:12px;
+}
+
+.meetup-link {
+  border-color:#838F9D;
+  border-style:solid;
+  border-width:1px;
+  background-color:#838F9D;
+  font-size:18px;
+  font-weight:700;
+  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
+  padding:1px 7px 1px 7px;
+  white-space:nowrap;
+}
+
+a.meetup-link:link{color:#fff;text-decoration:none;}
+a.meetup-link:visited {background-color:#838F9D;color:#fff;}
+a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+
+#row-zeroed {
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+
+#spacer-top {
+  height:16px;
+}
+
 @media (max-width: 500px) {
   #billboard-for-xs-less-600{
     margin:15px 0px 20px 0px;
@@ -167,19 +127,8 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 }
 
-
-
-
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-  #billboard-for-sm-plus {
-    display:block;
-  }
-
-  #header-for-sm-plus {
-    display:block;
-  }
 
   #row-zeroed-for-sm-plus {
     margin:0px 0px 0px 0px;
@@ -196,8 +145,10 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     background:rgba(100, 115, 133, .85);
     font-size:22px;
     font-weight:400;
-    padding:10px 8px 10px 10px;line-height:1.2em;
+    line-height:1.2em;
     margin:25px 0px 0px 0px;
+    padding:10px 8px 10px 10px;
+
   }
 
   .row-two-image {
@@ -209,8 +160,10 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     background:rgba(100, 115, 133, .85);
     font-size:22px;
     font-weight:400;
-    padding:10px 8px 10px 10px;line-height:1.2em;
+    line-height:1.2em;
     margin:80px 0px 0px 0px;
+    padding:10px 8px 10px 10px;
+
   }
 
   #we-are-image {
@@ -225,38 +178,17 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     border-color:#fff;
   }
 
-  .transparent-link {
-    border-color:#838F9D;
-    border-style:solid;
-    border-width:1px;
-    background-color:#838F9D;
-    height:126px;
-    width:171px;
-  }
-
-
-
-  
-
-  #nav-for-sm-plus {
-    display:block;
-  }
-
-  .nav-item-on-left {
-    background-color:rgba(78,93,108,1.0);
+  #bee-overlay {
+    visibility:hidden;
+    font-size:40px;
+    font-weight:700;
     line-height:1.2em;
-    padding:6px 0px 6px 0px;
-  }
-
-  #nav-item-on-right {
-    background-color:rgba(78,93,108,1.0);
+    margin:36px 0px 0px 0px;
     text-align:center;
-    line-height:1.2em;
-    padding:6px 0px 6px 0px;
   }
 
   #above-nav-bar-spacer {
-        height:6px;
+    height:6px;
   }
 
   .nav-item-on-center {
@@ -267,127 +199,30 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     font-size:24px;
   }
 
-  a.nav-bar-ref-for-sm-plus-on-curr-page {
-    font-size:20px;
-    padding:6px 6px 6px 6px;
-    line-height:1.2em;
-    text-decoration:none;
-    color:#d0d5d8;
-    font-weight:400;
-  }
-
-  a.nav-bar-ref-for-sm-plus-on-curr-page:hover {
-    font-size:20px;
-    padding:6px 6px 6px 6px;
-    line-height:1.2em;
-    text-decoration:none;
-    color:#d0d5d8;
-    font-weight:400;
-    background-color:#647385;
-  }
-
   a.nav-bar-ref-for-sm-plus:link { 
-    font-size:20px;
-    padding:6px 6px 6px 6px;
+    font-size:18px;
+    padding:3px 6px 3px 6px;
     color:#d0d5d8;
     line-height:1.2em;
     text-decoration:none;
   }
   a.nav-bar-ref-for-sm-plus:active {
-    padding:6px 6px 6px 6px;
+    padding:3px 6px 3px 6px;
     background-color:#647385;
     color:#fff;}
   a.nav-bar-ref-for-sm-plus:hover {
-    padding:6px 6px 6px 6px;
+    padding:3px 6px 3px 6px;
     background-color:#647385;
     color:#fff;}
   a.nav-bar-ref-for-sm-plus:visited { 
-    font-size:20px;
-    padding:6px 6px 6px 6px;
-    color:#d0d5d8;
-  }
-
-  a.nav-bar-ref-for-sm-plus-home-page:link { 
     font-size:18px;
     padding:3px 6px 3px 6px;
     color:#d0d5d8;
-    line-height:1.2em;
-    text-decoration:none;
-  }
-  a.nav-bar-ref-for-sm-plus-home-page:active {
-    padding:3px 6px 3px 6px;
-    background-color:#647385;
-    color:#fff;}
-  a.nav-bar-ref-for-sm-plus-home-page:hover {
-    padding:3px 6px 3px 6px;
-    background-color:#647385;
-    color:#fff;}
-  a.nav-bar-ref-for-sm-plus-home-page:visited { 
-    font-size:18px;
-    padding:3px 6px 3px 6px;
-    color:#d0d5d8;
-  }
-
-  .quick-links-underlines {
-    border-bottom: 1px solid #eee;
-  }
-
-  a.quick-link-sm-plus:link{
-    margin-left:0;
-    margin-right:0;
-    padding-left:0;
-    padding-right:0;
-    display:block;
-    width:100%;
-    border-width:0px 0px 1px 0px;
-    border-style:solid;
-    border-color:#d0d5d8;
-    color:#d0d5d8;
-    font-size:16px;
-    text-decoration:none;
-    font-weight:700;
-  }
-  a.quick-link-sm-plus:active {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
-  a.quick-link-sm-plus:hover {background-color:rgb(78, 93, 108); color:#f0f1f3;border-color:#f0f1f3;}
-  a.quick-link-sm-plus:visited {color:#d0d5d8;}
-
-  a.quick-link-curr-page-sm-plus {
-    margin-left:0;
-    margin-right:0;
-    padding-left:0;
-    padding-right:0;
-    display:block;
-    width:100%;
-    border-width:0px 0px 1px 0px;
-    border-style:solid;
-    border-color:#fff;
-    color:#fff;
-    font-size:16px;
-    font-weight:700;
-    text-decoration:none;
-  }
-  a.quick-link-curr-page-sm-plus:active {background-color:rgb(78, 93, 108); color:#fff;border-color:#fff;}
-  a.quick-link-curr-page-sm-plus:hover {background-color:rgb(78, 93, 108); color:#fff;border-color:#fff;}
-  a.quick-link-curr-page-sm-plus:visited {color:#d0d5d8;}
-
-  #spacer-row-above-quick-links {
-    height:30px;
-  }
-
-  #spacer-below-billboard-for-sm-plus {
-    height:10px;
-    display:block;
   }
 
   #spacer-at-bottom {
     height:50px;
   }
-
-  #tags-sm-plus {
-    display:block;
-  }
-
-
 
   /* Hide items that are only for XS */
   #billboard-for-xs{
@@ -422,23 +257,11 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   #main-container {
     width:750px;
   }
-  .main-message{
-    background:rgba(100, 115, 133, .95);
-    font-size:20px;
-    padding:10px 6px 10px 10px;
-    line-height:1.2em;
-  }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #main-container {
     width:750px;
-  }
-  .main-message{
-    background:rgba(100, 115, 133, .95);
-    font-size:20px;
-    padding:10px 10px 10px 10px;
-    line-height:1.2em;
   }
 }
