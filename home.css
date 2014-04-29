@@ -188,8 +188,8 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
   }
 
   .row-two-image {
-    background-image:url('images/silverInternet08.jpg');
-    height:126px;
+    background-image:url('images/silverInternet11.jpg');
+    height:264px;
   }
 
   .row-one-message{
@@ -197,7 +197,7 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     font-size:22px;
     font-weight:400;
     padding:10px 8px 10px 10px;line-height:1.2em;
-    margin:27px 0px 0px 0px;
+    margin:25px 0px 0px 0px;
   }
 
   .row-two-message{
@@ -205,7 +205,7 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     font-size:22px;
     font-weight:400;
     padding:10px 8px 10px 10px;line-height:1.2em;
-    margin:25px 0px 0px 0px;
+    margin:80px 0px 0px 0px;
   }
 
   #nav-for-sm-plus {
