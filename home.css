@@ -192,6 +192,16 @@ a.meetup-link:active {background-color:rgb(43, 62, 80);color:#fff;}
     height:264px;
   }
 
+  #we-are-image {
+    background-image:url('images/whoWeAre04.png');
+   /* background-color:#000;*/
+    height:126px;
+  }
+
+  #bee-image {
+    background-image:url('images/bee01.jpg');
+    height:126px;
+  }
   .row-one-message{
     background:rgba(100, 115, 133, .85);
     font-size:22px;

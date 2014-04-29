@@ -163,13 +163,11 @@
   </div>
   <div class="col-sm-3" style="padding:0px 0px 0px 6px">
     <div class="row" id="row-zeroed">
-      <div class="col-sm-12" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;">
-        <img src="images/bee01.jpg" >
+      <div class="col-sm-12" id = "bee-image" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px;">
       </div>
     </div>
     <div class="row" id="row-zeroed">
-      <div class="col-sm-12" style="padding:12px 0px 0px 0px; margin:0px 0px 0px 0px;">
-        <img src="images/whoWeAre.png" >
+      <div class="col-sm-12" id = "we-are-image" style="padding:0px 0px 0px 0px; margin:12px 0px 0px 0px;">
       </div>
     </div>
   </div>
@@ -237,6 +235,33 @@
   <div class="col-sm-12" id="spacer-at-bottom">
   </div>
 </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("#we-are-image").hover(
+    function(){
+      $("#we-are-image").css("background-image","url(images/code_for_america_logo-colored.png)");
+    },
+    function () {
+      $("#we-are-image").css("background-image","url(images/whoWeAre04.png)");
+    }
+  );
+});
+
+$(document).ready(function(){
+  $("#bee-image").hover(
+    function(){
+      $("#bee-image").css("background-image","url(images/projects-image02.png)");
+    },
+    function () {
+      $("#bee-image").css("background-image","url(images/bee01.jpg)");
+    }
+  );
+});
+</script>
+
 
 </div>
 
