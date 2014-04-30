@@ -32,6 +32,10 @@
   padding-top:5px;
 }
 
+#col-padding-sm-plus-left {
+    padding:0px 8px 0px 0px;
+  }
+
 #col-zeroed {
   margin:0px 0px 0px 0px;
   padding:0px 0px 0px 0px;
@@ -107,11 +111,11 @@ a#proj-link:visited {
 }
 
 #spacer-row-below-nav {
-  height:12px;
+  height:16px;
 }
 
 #spacer-row-below-header {
-  height:12px;
+  height:16px;
 }
 
 .technology-container {

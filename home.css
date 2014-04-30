@@ -87,7 +87,7 @@
 }
 
 #general-row-spacer {
-  height:12px;
+  height:16px;
 }
 
 .meetup-link {
@@ -149,6 +149,10 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     margin:0px 0px 0px 0px;
   }
 
+  #col-padding-sm-plus {
+    padding:0px 8px 0px 8px;
+  }
+
   .nav-item-on-center {
     line-height:1.2em;
     text-align:center;
@@ -177,7 +181,7 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   #row-zeroed-for-sm-plus {
-    margin:0px 0px 0px 0px;
+    margin:0px -8px 0px -8px;
     padding:0px 0px 0px 0px;
     display:block;
   }
@@ -199,7 +203,7 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
   .row-two-image {
     background-image:url('images/silverInternet11.jpg');
-    height:264px;
+    height:268px;
   }
 
   .row-two-message{
