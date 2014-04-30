@@ -1,6 +1,7 @@
 /*   dark-background-blue      rgb(43, 62, 80)     */
 /*   lighter-background-blue   rgb(78, 93, 108)    */
 /*   light-forefront-grey-blue rgb(100, 115, 133)  */
+/*   light-blue-almost-white-for text rgb(208, 213, 216)  */
 /* X-Small and X-Small Plus devices 
  Note items specifically for X Small are marked with xs*/
 
@@ -43,7 +44,6 @@
   margin-left:0px;
   margin-right:0px;
   padding:0px 0px 0px 0px;
-  background-color:#700;
 }
 
 #inspiration-container-xs {
@@ -129,6 +129,52 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #above-nav-bar-spacer {
+    height:6px;
+  }
+
+  #bee-image {
+    background-image:url('images/bee01.jpg');
+    height:126px;
+    border-color:#fff;
+  }
+
+  #bee-overlay {
+    color:rgb(208,213,216);
+    visibility:hidden;
+    font-size:40px;
+    font-weight:700;
+    line-height:1.2em;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+  }
+
+  .nav-item-on-center {
+    line-height:1.2em;
+    text-align:center;
+    font-size:24px;
+  }
+
+  a.nav-bar-ref-for-sm-plus:link { 
+    font-size:18px;
+    padding:3px 6px 3px 6px;
+    color:rgb(203,213,216);
+    line-height:1.2em;
+    text-decoration:none;
+  }
+  a.nav-bar-ref-for-sm-plus:active {
+    padding:3px 6px 3px 6px;
+    background-color:rgb(100,115,133);
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:hover {
+    padding:3px 6px 3px 6px;
+    background-color:rgb(100,115,133);
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:visited { 
+    font-size:18px;
+    padding:3px 6px 3px 6px;
+    color:rgb(203,213,216);
+  }
 
   #row-zeroed-for-sm-plus {
     margin:0px 0px 0px 0px;
@@ -148,7 +194,7 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     line-height:1.2em;
     margin:25px 0px 0px 0px;
     padding:10px 8px 10px 10px;
-
+    color:#fff;
   }
 
   .row-two-image {
@@ -163,65 +209,17 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     line-height:1.2em;
     margin:80px 0px 0px 0px;
     padding:10px 8px 10px 10px;
-
-  }
-
-  #we-are-image {
-    background-image:url('images/whoWeAre04.png');
-    height:126px;
-    border-color:#fff;
-  }
-
-  #bee-image {
-    background-image:url('images/bee01.jpg');
-    height:126px;
-    border-color:#fff;
-  }
-
-  #bee-overlay {
-    visibility:hidden;
-    font-size:40px;
-    font-weight:700;
-    line-height:1.2em;
-    margin:36px 0px 0px 0px;
-    text-align:center;
-  }
-
-  #above-nav-bar-spacer {
-    height:6px;
-  }
-
-  .nav-item-on-center {
-    /*background-color:rgba(78,93,108,1.0);*/
-    line-height:1.2em;
-    /*padding:6px 0px 6px 0px;*/
-    text-align:center;
-    font-size:24px;
-  }
-
-  a.nav-bar-ref-for-sm-plus:link { 
-    font-size:18px;
-    padding:3px 6px 3px 6px;
-    color:#d0d5d8;
-    line-height:1.2em;
-    text-decoration:none;
-  }
-  a.nav-bar-ref-for-sm-plus:active {
-    padding:3px 6px 3px 6px;
-    background-color:#647385;
-    color:#fff;}
-  a.nav-bar-ref-for-sm-plus:hover {
-    padding:3px 6px 3px 6px;
-    background-color:#647385;
-    color:#fff;}
-  a.nav-bar-ref-for-sm-plus:visited { 
-    font-size:18px;
-    padding:3px 6px 3px 6px;
-    color:#d0d5d8;
+    color:#fff;
   }
 
   #spacer-at-bottom {
     height:50px;
+  }
+
+  #we-are-image {
+    background-image:url('images/whoWeAre05.png');
+    height:126px;
+    border-color:#fff;
   }
 
   /* Hide items that are only for XS */

@@ -122,10 +122,10 @@
 </div>
 
 <div class ="row" id ="row-zeroed-for-sm-plus">
-  <div class="col-sm-3" style="padding:0px 6px 0px 0px; margin:0px 0px 0px 0px;">
+  <div class="col-sm-3" style="padding:0px 9px 0px 0px; margin:0px 0px 0px 0px;">
     <img src="images/logo-rectangle.png">
   </div>
-  <div class="col-sm-9" style="padding:0px 0px 0px 6px">
+  <div class="col-sm-9" style="padding:0px 0px 0px 3px">
     <div class="row-one-image">
       <div class="col-sm-1">
       </div>
@@ -170,10 +170,14 @@
     </div>
     <div class="row" id="row-zeroed">
       <div class="col-sm-12" id = "bee-image" style="padding:0px 0px 0px 0px; margin:12px 0px 0px 0px;">
-        <div id="bee-overlay">
-          Projects
+        <div id="bee-overlay" style="position:relative;">
+          <div style="position:absolute;z-index:3;width:171px;text-align:center">
+          <div style="padding:34px 0px 0px 0px;">
+            Projects
+            </div>
+          </div>
+            <a href="#/projects" style="margin:0px 0px 0px 0px;position:absolute;z-index:4;"><img src="images/link-transparent.png"></a>
         </div>
-        <a href="#/projects"><img src="images/link-transparent.png" alt="HTML tutorial" width="171" height="126"></a>
       </div>
     </div>
   </div>
@@ -252,7 +256,7 @@ $(document).ready(function(){
       $("#we-are-image").css("background-image","url(images/code_for_america_logo-colored.png)");
     },
     function () {
-      $("#we-are-image").css("background-image","url(images/whoWeAre04.png)");
+      $("#we-are-image").css("background-image","url(images/whoWeAre05.png)");
     }
   );
 });
