@@ -113,7 +113,7 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 }
 
 #spacer-top {
-  height:16px;
+  height:10px;
 }
 
 @media (max-width: 500px) {
@@ -218,6 +218,10 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
   #spacer-at-bottom {
     height:50px;
+  }
+
+  #spacer-top {
+    height:100px;
   }
 
   #we-are-image {
