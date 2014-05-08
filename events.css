@@ -1,0 +1,19 @@
+.row-05-31-14 {
+    background-image:url('images/05-31-14-events.jpg');
+    height:268px;
+}
+
+  .event-05-31-14{
+    background:rgba(100, 115, 133, .85);
+    font-size:24px;
+    font-weight:400;
+    padding:10px 8px 10px 10px;line-height:1.2em;
+    margin:65px 0px 0px 0px;
+  }
+  
+  .underline-div {
+    float:left;
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(208, 213, 216);
+  }
