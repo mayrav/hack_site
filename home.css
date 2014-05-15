@@ -134,16 +134,17 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   #bee-image {
-    background-image:url('images/bee01.jpg');
+    background-image:url('images/bee03.jpg');
     height:126px;
     border-color:#fff;
   }
 
   #bee-overlay {
-    color:rgb(208,213,216);
+    /*color:rgb(208,213,216);*/
+    color:#fff;
     visibility:hidden;
     font-size:40px;
-    font-weight:700;
+    font-weight:400;
     line-height:1.2em;
     padding:0px 0px 0px 0px;
     margin:0px 0px 0px 0px;

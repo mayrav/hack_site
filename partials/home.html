@@ -173,8 +173,8 @@
       <div class="col-sm-12" id = "bee-image" style="padding:0px 0px 0px 0px; margin:16px 0px 0px 0px;">
         <div id="bee-overlay" style="position:relative;">
           <div style="position:absolute;z-index:3;width:168px;text-align:center">
-          <div style="padding:34px 0px 0px 0px;">
-            Projects
+            <div style="padding:34px 0px 0px 0px;">
+              Projects
             </div>
           </div>
             <a href="#/projects" style="margin:0px 0px 0px 0px;position:absolute;z-index:4;"><img src="images/link-transparent.png"></a>
@@ -266,9 +266,11 @@ $(document).ready(function(){
   $("#bee-image").hover(
     function(){
       $("#bee-overlay").css("visibility","visible");
+      $("#bee-image").css("background-image","url(images/bee04.jpg)");
     },
     function () {
       $("#bee-overlay").css("visibility","hidden");
+      $("#bee-image").css("background-image","url(images/bee03.jpg)");
     }
   );
 });
