@@ -107,6 +107,23 @@ a.meetup-link:visited {background-color:#838F9D;color:#fff;}
 a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
+.minor-link {
+  border-color:#838F9D;
+  border-style:solid;
+  border-width:1px;
+  background-color:#838F9D;
+  font-size:16px;
+  font-weight:700;
+  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
+  padding:1px 7px 1px 7px;
+  white-space:nowrap;
+}
+
+a.minor-link:link{color:#fff;text-decoration:none;}
+a.minor-link:visited {background-color:#838F9D;color:#fff;}
+a.minor-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+
 #row-zeroed {
   margin:0px 0px 0px 0px;
   padding:0px 0px 0px 0px;
@@ -194,10 +211,10 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
   .row-one-message{
     background:rgba(100, 115, 133, .85);
-    font-size:22px;
+    font-size:18px;
     font-weight:400;
     line-height:1.2em;
-    margin:25px 0px 0px 0px;
+    margin:22px 0px 0px 0px;
     padding:10px 8px 10px 10px;
     color:#fff;
   }
