@@ -17,3 +17,64 @@
     border-bottom-style:solid;
     border-bottom-color:rgb(208, 213, 216);
   }
+
+  #event-header-for-xs {
+    margin-left:0px;
+    margin-right:0px;
+    padding:10px 0px 10px 0px;
+    font-size:20px;
+    font-weight:700;
+    background-image:url('images/silverInternet13-xs.jpg');
+  }
+
+#events-xs-spacer {
+  height:10px;
+}
+
+  #events-details {
+    font-size:18px;
+  }
+
+  #events-details-xs-500 {
+    display:none;
+  }
+
+  #events-details-xs {
+    display:block;
+  }
+
+  #event-title-xs {
+    font-size:22px;
+    font-weight:400;
+    text-decoration:underline;
+    padding-bottom:16px;
+  }
+
+@media (max-width: 500px) {
+    #events-details-xs-500 {
+    display:block;
+  }
+  #events-details-xs {
+    display:none;
+  }
+}
+
+@media (min-width: 768px) {
+  #events-details {
+    font-size:15px;
+  }
+  #events-details-xs-one-column {
+  margin-left:0px;
+  margin-right:0px;
+  padding:0px 0px 0px 0px;
+  }
+  #event-header-for-xs {
+    display:none;
+  }
+  #events-details-xs {
+    display:none;
+  }
+  #event-title-xs {
+    display:none;
+  }
+}
