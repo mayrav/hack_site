@@ -1,18 +1,76 @@
-/* X-Small devices */
-#spacer-row-above-quick-links {
-  height:30px;
+/*   dark-background-blue      rgb(43, 62, 80)     */
+/*   lighter-background-blue   rgb(78, 93, 108)    */
+/*   light-forefront-grey-blue rgb(100, 115, 133)  */
+/*   light-blue-almost-white-for text rgb(208, 213, 216)  */
+/* X-Small and X-Small Plus devices 
+ Note items specifically for X Small are marked with xs*/
+
+/* X=SMALL */
+/* Turn Off Items for small and small-plus sizes */
+#row-zeroed-for-sm-plus{
+  display:none;
+}
+/* also turn off items for less than 600px*/
+#billboard-for-xs-less-600{
+  display:none;
+}
+/* Turn Off Items END*/
+
+/* X-SMALL devices Continued...*/
+#billboard-for-xs{
+  margin:15px 0px 20px 0px;
+  background-color:rgba(100, 115, 133,1.0);
+  display:block;
 }
 
-#top-spacer {
-  height:16px;
+.center-image-xs {
+  display:block;
+  margin:0px auto 0px auto;
+}
+
+#center-nav-blocks-xs {
+  display:block;
+  text-align:center;
+  margin:0px auto 0px auto;
+  padding:6px 0px 6px 0px;
+}
+
+#col-xs-12-zeroed {
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+}
+
+#header-for-xs {
+  margin-left:0px;
+  margin-right:0px;
+  padding:0px 0px 0px 0px;
+}
+
+#inspiration-container-xs {
+  display:block;
+}
+
+#nav-for-xs {
+  margin-left:0px;
+  margin-right:0px;
+  padding:0px 0px 0px 0px;
+}
+
+#spacer-row-below-header-xs{
+    height:15px;
+}
+
+#tags-xs {
+  display:block;
 }
 
 .xs-header-background {
   background-color:rgb(100, 115, 133);
+  padding:0px 0px 0px 0px;
 }
 
 .xs-nav-bar-buttons {
-  width:100%;
+  /*width:100%;*/
   background-color:rgb(78, 93, 108);
 }
 
@@ -20,14 +78,7 @@
   font-size:1.0em;
 }
 
-#spacer-row-below-header-for-sm-plus {
-  height:10px;
-}
-
-#billboard-for-xs{
-  margin:20px 0px 20px 0px;
-  background-color:rgba(100, 115, 133,1.0);
-}
+/* for all sized devices */
 
 .main-message{
   background:rgba(100, 115, 133,1.0);
@@ -35,103 +86,171 @@
   padding:10px 0px 10px 0px;line-height:1.2em;
 }
 
-
-#center-nav-blocks {
-  display:block;
-  margin:0px auto 0px auto;
+#general-row-spacer {
+  height:16px;
 }
 
-  #bottom-spacer {
-    height:15px;
+.meetup-link {
+  border-color:#838F9D;
+  border-style:solid;
+  border-width:1px;
+  background-color:#838F9D;
+  font-size:18px;
+  font-weight:700;
+  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
+  padding:1px 7px 1px 7px;
+  white-space:nowrap;
 }
 
-#header-for-sm-plus {
-  display:none;
+a.meetup-link:link{color:#fff;text-decoration:none;}
+a.meetup-link:visited {background-color:#838F9D;color:#fff;}
+a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+
+.minor-link {
+  border-color:#838F9D;
+  border-style:solid;
+  border-width:1px;
+  background-color:#838F9D;
+  font-size:16px;
+  font-weight:700;
+  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
+  padding:1px 7px 1px 7px;
+  white-space:nowrap;
 }
 
-#tags-xs {
-  display:block;
+a.minor-link:link{color:#fff;text-decoration:none;}
+a.minor-link:visited {background-color:#838F9D;color:#fff;}
+a.minor-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+
+#row-zeroed {
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
 }
 
-#tags-sm-plus {
-  display:none;
-}
-.navbar {
-  display:none;
+#spacer-top {
+  height:10px;
 }
 
-#billboard-for-sm-plus {
-  display:none;
+@media (max-width: 500px) {
+  #billboard-for-xs-less-600{
+    margin:15px 0px 20px 0px;
+    background-color:rgba(100, 115, 133,1.0);
+    display:block;
+  }
+  #billboard-for-xs {
+    display:none;
+  }
 }
-
-#spacer-below-billboard-for-sm-plus {
-  display:none;
-}
-
-#tag-text-for-sm-plus {
-  display:none;
-}
-
-.center-image {
-  display:block;
-  margin:0px auto 0px auto;
-}
-
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .main-message{
-    background:rgba(100, 115, 133, .95);
-    font-size:20px;
-    padding:10px 8px 10px 10px;line-height:1.2em;
+  #above-nav-bar-spacer {
+    height:6px;
   }
 
-
-  #billboard-for-sm-plus {
-  display:block;
+  #bee-image {
+    background-image:url('images/bee03.jpg');
+    height:126px;
+    border-color:#fff;
   }
 
-  #header-for-sm-plus {
+  #bee-overlay {
+    /*color:rgb(208,213,216);*/
+    color:#fff;
+    visibility:hidden;
+    font-size:40px;
+    font-weight:400;
+    line-height:1.2em;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
+  }
+
+  #col-padding-sm-plus {
+    padding:0px 8px 0px 8px;
+  }
+
+  .nav-item-on-center {
+    line-height:1.2em;
+    text-align:center;
+    font-size:24px;
+  }
+
+  a.nav-bar-ref-for-sm-plus:link { 
+    font-size:18px;
+    padding:3px 6px 3px 6px;
+    color:rgb(203,213,216);
+    line-height:1.2em;
+    text-decoration:none;
+  }
+  a.nav-bar-ref-for-sm-plus:active {
+    padding:3px 6px 3px 6px;
+    background-color:rgb(100,115,133);
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:hover {
+    padding:3px 6px 3px 6px;
+    background-color:rgb(100,115,133);
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:visited { 
+    font-size:18px;
+    padding:3px 6px 3px 6px;
+    color:rgb(203,213,216);
+  }
+
+  #row-zeroed-for-sm-plus {
+    margin:0px -8px 0px -8px;
+    padding:0px 0px 0px 0px;
     display:block;
-  } 
-
-  .quick-links-underlines {
-    border-bottom: 1px solid #eee;
   }
 
-  #spacer-row-above-quick-links {
-    height:43px;
+  .row-one-image {
+    background-image:url('images/discovery01.jpg');
+    height:126px;
   }
 
-  #spacer-row-below-header-for-sm-plus{
-    height:30px;
+  .row-one-message{
+    background:rgba(100, 115, 133, .85);
+    font-size:18px;
+    font-weight:400;
+    line-height:1.2em;
+    margin:34px 0px 0px 0px;
+    padding:10px 8px 10px 10px;
+    color:#fff;
   }
 
-  .navbar {
-    display:block;
+  .row-two-image {
+    background-image:url('images/silverInternet12.jpg');
+    height:268px;
   }
 
-  .home-image {
-    background-image:url('Ballston.jpg');
-    height:304px;
+  .row-two-message{
+    background:rgba(100, 115, 133, .85);
+    font-size:22px;
+    font-weight:400;
+    line-height:1.2em;
+    margin:84px 0px 0px 0px;
+    padding:10px 8px 10px 10px;
+    color:#fff;
   }
 
-  .top-text {
-    position:absolute;
-    top:86px;z-index:10;
-  }
-
-  #spacer-below-billboard-for-sm-plus {
-    height:10px;
-    display:block;
-  }
-
-  #tags-sm-plus {
-    display:block;
-  }
-
-  #bottom-spacer {
+  #spacer-at-bottom {
     height:50px;
+  }
+
+  #spacer-top-home {
+    height:100px;
+  }
+
+  #we-are-image {
+    background-image:url('images/whoWeAre06.png');
+    height:126px;
+    border-color:#fff;
+  }
+
+  /* Hide items that are only for XS */
+  #billboard-for-xs{
+    display:none;
   }
 
   #header-for-xs {
@@ -142,39 +261,31 @@
     display:none;
   }
 
-  #billboard-for-xs{
-    display:none;
-  }
-
   #tags-xs {
     display:none;
   }
 
-  #tag-text-for-sm-plus {
-    display:block;
+  #spacer-row-below-header-xs{
+    display:none;
   }
+
+  #inspiration-container-xs {
+  display:none;
+}
+  /* End hiding items that are only for XS */
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .main-message{
-    background:rgba(100, 115, 133, .95);
-    font-size:20px;
-    padding:10px 6px 10px 10px;
-    line-height:1.2em;
+  #main-container {
+    width:750px;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #main-container {
-    width:970px;
-  }
-  .main-message{
-    background:rgba(100, 115, 133, .95);
-    font-size:20px;
-    padding:10px 10px 10px 10px;
-    line-height:1.2em;
+    width:750px;
   }
 }
