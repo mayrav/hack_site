@@ -50,6 +50,22 @@
     padding-bottom:16px;
   }
 
+  .section-title {
+    font-size:22px;
+    font-weight:400;
+    text-decoration:underline;
+    padding-bottom:8px;
+  }
+
+  .section-text {
+    font-size:18px;
+    font-weight:400;
+  }
+
+  #col-padding-sm-plus-left-pictures {
+    padding:4px 8px 0px 0px;
+  }
+
 @media (max-width: 500px) {
     #events-details-xs-500 {
     display:block;
