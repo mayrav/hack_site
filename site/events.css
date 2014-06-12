@@ -27,6 +27,7 @@
     background-image:url('images/silverInternet13-xs.jpg');
   }
 
+
 #events-xs-spacer {
   height:10px;
 }
@@ -50,6 +51,48 @@
     padding-bottom:16px;
   }
 
+  #col-xs-6-zeroed {
+  margin:0px 0px 0px 0px;
+  padding:0px 0px 0px 0px;
+  }
+
+  #col-xs-6-zeroed-right {
+  margin:0px 0px 0px 0px;
+  padding:0px 8px 0px 0px;
+  }
+
+  .section-title {
+    font-size:22px;
+    font-weight:400;
+    text-decoration:underline;
+    padding-bottom:8px;
+    color:rgb(208, 213, 216);
+  }
+
+  .section-text {
+    font-size:18px;
+    font-weight:400;
+    color:rgb(208, 213, 216);
+  }
+
+  .section-text-link {
+  border-width:0px;
+  font-size:18px;
+  font-weight:400;
+  white-space:nowrap;
+  text-decoration:underline;
+  color:rgb(208, 213, 216);
+}
+
+a.section-text-link:link{color:#fff;text-decoration:underline}
+a.section-text-link:visited {color:#fff;text-decoration:underline}
+a.section-text-link:hover {color:#fff;text-decoration:none;background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
+a.section-text-link:active {color:#fff;text-decoration:underline}
+
+  #col-padding-sm-plus-left-pictures {
+    padding:4px 8px 0px 0px;
+  }
+
 @media (max-width: 500px) {
     #events-details-xs-500 {
     display:block;
@@ -57,6 +100,7 @@
   #events-details-xs {
     display:none;
   }
+
 }
 
 @media (min-width: 768px) {
