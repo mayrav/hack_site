@@ -9,6 +9,12 @@ hackApp.config(['$routeProvider',
       when('/home', {
         templateUrl: 'partials/home.html',
       }).
+      when('/aboutus', {
+        templateUrl: 'partials/aboutus.html',
+      }).
+      when('/events', {
+        templateUrl: 'partials/events.html',
+      }).
       when('/resources', {
         templateUrl: 'partials/resources.html',
         controller: 'ResourceCtrl'
