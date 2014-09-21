@@ -1,4 +1,4 @@
-var hackControllers = angular.module('hackControllers', ["resourceService","projectService"]);
+var hackControllers = angular.module('hackControllers', ["resourceService","projectService","eventService"]);
  
 hackControllers.controller('ResourceCtrl', function ($scope, $http, Resource) {
   $scope.resources = Resource.query();
@@ -32,6 +32,10 @@ hackControllers.controller('ProjectCtrl', function ($scope, $http, Project) {
   };
 
 });
+
+hackControllers.controller('EventCtrl', function ($scope,$http, Event){
+  $scope.events = Event.query();
+})
 
 function HeaderCtrl($scope, $location) 
 { 
