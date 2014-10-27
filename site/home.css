@@ -1,6 +1,6 @@
 /*   dark-background-blue      rgb(43, 62, 80)     */
-/*   lighter-background-blue   rgb(78, 93, 108)    */
-/*   light-forefront-grey-blue rgb(100, 115, 133)  */
+/*   lighter-background-blue   rgb(78, 93, 108) #4E5D6C*/
+/*   light-forefront-grey-blue rgb(100, 115, 133) #647385*/
 /*   light-blue-almost-white-for text rgb(208, 213, 216)  */
 /* X-Small and X-Small Plus devices 
  Note items specifically for X Small are marked with xs*/
@@ -130,7 +130,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 }
 
 #spacer-top {
-  height:10px;
+  height:300px;
 }
 
 @media (max-width: 500px) {
@@ -151,7 +151,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   #bee-image {
-    background-image:url('images/bee04.jpg');
+    background-image:url('kimages/bee04.jpg');
     height:126px;
     border-color:#fff;
   }
@@ -199,28 +199,27 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   #row-zeroed-for-sm-plus {
-    margin:0px -8px 0px -8px;
+    margin:0px 0px 0px 0px;
     padding:0px 0px 0px 0px;
     display:block;
   }
 
   .row-one-image {
-    background-image:url('images/discovery01.jpg');
+    background-image:url('fimages/discovery01.jpg');
     height:126px;
   }
 
   .row-one-message{
     background:rgba(100, 115, 133, .85);
-    font-size:18px;
+    font-size:22px;
     font-weight:400;
-    line-height:1.2em;
-    margin:34px 0px 0px 0px;
+    line-height:1.5em;
     padding:10px 8px 10px 10px;
     color:#fff;
   }
 
   .row-two-image {
-    background-image:url('images/silverInternet12.jpg');
+    //background-image:url('fimages/silverInternet12.jpg');
     height:268px;
   }
 
@@ -228,7 +227,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     background:rgba(100, 115, 133, .85);
     font-size:22px;
     font-weight:400;
-    line-height:1.2em;
+    line-height:1.5em;
     margin:84px 0px 0px 0px;
     padding:10px 8px 10px 10px;
     color:#fff;
@@ -239,11 +238,15 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   #spacer-top-home {
-    height:100px;
+    height:546px;
+  }
+
+  #spacer-top-home-minor {
+    height:265px;
   }
 
   #we-are-image {
-    background-image:url('images/whoWeAre06.png');
+    background-image:url('fimages/whoWeAre06.png');
     height:126px;
     border-color:#fff;
   }
@@ -279,13 +282,13 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #main-container {
-    width:750px;
+    //width:750px;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   #main-container {
-    width:750px;
+    //width:750px;
   }
 }
