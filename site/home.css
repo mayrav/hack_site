@@ -223,17 +223,30 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     color:#fff;
   }
 
-  .row-two-image {
-    //background-image:url('fimages/silverInternet12.jpg');
-    height:268px;
+  .main-message-positioning {
+    position:absolute;
+    top:25%;
   }
 
-  .row-two-message{
+  .main-message{
     background:rgba(100, 115, 133, .85);
-    font-size:22px;
-    font-weight:400;
+    font-size:20px;
+    font-weight:300;
     line-height:1.5em;
-    margin:84px 0px 0px 0px;
+    padding:10px 8px 10px 10px;
+    color:#fff;
+  }
+
+  .minor-message-positioning {
+    position:absolute;
+    top:30%;
+  }
+
+  .minor-message {
+    background:rgba(100, 115, 133, .85);
+    font-size:1.25em;
+    font-weight:300;
+    line-height:1.5em;
     padding:10px 8px 10px 10px;
     color:#fff;
   }
@@ -284,22 +297,42 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
 }
 
+@media (min-width:818px) {
+  .main-message-positioning {    
+    top:25%;
+  }
+  .main-message {
+    font-weight:400;
+    font-size:22px;
+  }
+}
+
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .outer {
     margin:50px 80px 0px 80px;
   }
-  #main-container {
-    //width:750px;
+}
+
+@media (min-width:1050px) {
+  .main-message-positioning {
+    top:30%;
+  }
+
+  .minor-message{
+    font-size:1.4em;
   }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  #main-container {
-    //width:750px;
+
+  .main-message{
+     font-size:24px;
   }
-  .outer {
-    margin:50px 80px 0px 80px;
+
+    .minor-message{
+    font-size:1.5em;
   }
 }
