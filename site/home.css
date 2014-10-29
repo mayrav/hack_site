@@ -155,23 +155,6 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     height:6px;
   }
 
-  #bee-image {
-    background-image:url('kimages/bee04.jpg');
-    height:126px;
-    border-color:#fff;
-  }
-
-  #bee-overlay {
-    /*color:rgb(208,213,216);*/
-    color:#fff;
-    visibility:hidden;
-    font-size:40px;
-    font-weight:400;
-    line-height:1.2em;
-    padding:0px 0px 0px 0px;
-    margin:0px 0px 0px 0px;
-  }
-
   #col-padding-sm-plus {
     padding:0px 8px 0px 8px;
   }
@@ -179,11 +162,15 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   .nav-item-on-center {
     line-height:1.2em;
     text-align:center;
-    font-size:24px;
+    font-size:1.4em;
+  }
+
+  .nav-item-on-left {
+    line-height:1.2em;
+    font-size:1.4em;
   }
 
   a.nav-bar-ref-for-sm-plus:link { 
-    font-size:18px;
     padding:3px 6px 3px 6px;
     color:rgb(203,213,216);
     line-height:1.2em;
@@ -198,9 +185,29 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     background-color:rgb(100,115,133);
     color:#fff;}
   a.nav-bar-ref-for-sm-plus:visited { 
-    font-size:18px;
     padding:3px 6px 3px 6px;
     color:rgb(203,213,216);
+  }
+
+  .nav-projects {
+    width:24%;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 1px;
+  }
+
+  .nav-events {
+    width:18%;
+    padding:0px 0px 0px 0px;
+  }
+
+  .nav-resources {
+    width:30%;
+    padding:0px 0px 0px 0px;
+  }
+
+  .nav-blog {
+    width:10%;
+    padding:0px 0px 0px 0px;
   }
 
   #row-zeroed-for-sm-plus {
@@ -250,6 +257,8 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     padding:10px 8px 10px 10px;
     color:#fff;
   }
+
+
 
   #spacer-at-bottom {
     height:50px;
@@ -313,6 +322,19 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   .outer {
     margin:50px 80px 0px 80px;
   }
+
+  .nav-item-on-center {
+    line-height:1.2em;
+    text-align:center;
+    font-size:1.6em;
+  }
+
+  .nav-item-on-left {
+    line-height:1.2em;
+    font-size:1.6em;
+  }
+
+
 }
 
 @media (min-width:1050px) {
@@ -323,6 +345,8 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   .minor-message{
     font-size:1.4em;
   }
+
+
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -334,5 +358,27 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
     .minor-message{
     font-size:1.5em;
+  }
+
+
+  .nav-projects {
+    width:21%;
+    padding:0px 0px 0px 0px;
+    margin:0px 0px 0px 1px;
+  }
+
+  .nav-events {
+    width:18%;
+    padding:0px 0px 0px 0px;
+  }
+
+  .nav-resources {
+    width:30%;
+    padding:0px 0px 0px 0px;
+  }
+
+  .nav-blog {
+    width:10%;
+    padding:0px 0px 0px 0px;
   }
 }
