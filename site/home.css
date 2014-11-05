@@ -320,7 +320,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .outer {
-    margin:50px 72px 0px 72px;
+    margin:50px 68px 0px 68px;
   }
 
   .nav-item-on-center {
