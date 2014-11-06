@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+
+	.outside-nav-item {
+		float:right;
+		width:40px;
+		margin:0px 10px 10px 0px;
+	}
+	.outside-nav-item-rt {
+		float:right;
+		width:40px;
+		margin:0px 0px 10px 0px;
+	}
+}
