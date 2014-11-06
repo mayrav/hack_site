@@ -15,6 +15,25 @@
     font-size:1.4em;
   }
 
+  a.nav-bar-ref-for-sm-plus:link { 
+    padding:3px 6px 3px 6px;
+    color:rgb(203,213,216);
+    line-height:1.2em;
+    text-decoration:none;
+  }
+  a.nav-bar-ref-for-sm-plus:active {
+    padding:3px 6px 3px 6px;
+    background-color:rgb(100,115,133);
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:hover {
+    padding:3px 6px 3px 6px;
+    background-color:rgb(100,115,133);
+    color:#fff;}
+  a.nav-bar-ref-for-sm-plus:visited { 
+    padding:3px 6px 3px 6px;
+    color:rgb(203,213,216);
+  }
+
 }
 
 @media (min-width:1050px) {

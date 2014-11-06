@@ -185,95 +185,6 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     z-index:-2;
   }
 
-  .three-fifths {
-    width:60%;
-  }
-
-  .two-fifths {
-    width:40%;
-  }
-
-  .one-fifth {
-    width:20%;
-  }
-
-  .one-quarter {
-    width:25%;
-  }
-
-  #above-nav-bar-spacer {
-    height:6px;
-  }
-
-  #col-padding-sm-plus {
-    padding:0px 8px 0px 8px;
-  }
-
-  a.nav-bar-ref-for-sm-plus:link { 
-    padding:3px 6px 3px 6px;
-    color:rgb(203,213,216);
-    line-height:1.2em;
-    text-decoration:none;
-  }
-  a.nav-bar-ref-for-sm-plus:active {
-    padding:3px 6px 3px 6px;
-    background-color:rgb(100,115,133);
-    color:#fff;}
-  a.nav-bar-ref-for-sm-plus:hover {
-    padding:3px 6px 3px 6px;
-    background-color:rgb(100,115,133);
-    color:#fff;}
-  a.nav-bar-ref-for-sm-plus:visited { 
-    padding:3px 6px 3px 6px;
-    color:rgb(203,213,216);
-  }
-
-  .nav-projects {
-    width:15%;
-    padding:0px 0px 0px 0px;
-    margin:0px 0px 0px 1px;
-  }
-
-  .nav-events {
-    width:18%;
-    padding:0px 0px 0px 0px;
-  }
-
-  .nav-resources {
-    width:30%;
-    padding:0px 0px 0px 0px;
-  }
-
-  .nav-blog {
-    width:10%;
-    padding:0px 0px 0px 0px;
-  }
-
-  .nav-about-us {
-    width:20%;
-    padding:0px 0px 0px 0px;
-  }
-
-  #row-zeroed-for-sm-plus {
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
-    display:block;
-  }
-
-  .row-one-image {
-    background-image:url('fimages/discovery01.jpg');
-    height:126px;
-  }
-
-  .row-one-message{
-    background:rgba(100, 115, 133, .85);
-    font-size:18px;
-    font-weight:400;
-    line-height:1.5em;
-    padding:10px 8px 10px 10px;
-    color:#fff;
-  }
-
   .main-message-positioning {
     position:absolute;
     top:25%;
@@ -302,26 +213,6 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     color:#fff;
   }
 
-
-
-  #spacer-at-bottom {
-    height:50px;
-  }
-
-  #spacer-top-home {
-    height:546px;
-  }
-
-  #spacer-top-home-minor {
-    height:265px;
-  }
-
-  #we-are-image {
-    background-image:url('fimages/whoWeAre06.png');
-    height:126px;
-    border-color:#fff;
-  }
-
   /* Hide items that are only for XS */
   #billboard-for-xs{
     display:none;
@@ -345,7 +236,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
   #inspiration-container-xs {
   display:none;
-}
+  }
   /* End hiding items that are only for XS */
 
 }
@@ -376,45 +267,15 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   .minor-message{
     font-size:1.4em;
   }
-
-
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
   .main-message{
      font-size:24px;
   }
 
     .minor-message{
     font-size:1.5em;
-  }
-
-
-  .nav-projects {
-    width:15%;
-    padding:0px 0px 0px 0px;
-    margin:0px 0px 0px 1px;
-  }
-
-  .nav-events {
-    width:15%;
-    padding:0px 0px 0px 0px;
-  }
-
-  .nav-resources {
-    width:20%;
-    padding:0px 0px 0px 0px;
-  }
-
-  .nav-blog {
-    width:15%;
-    padding:0px 0px 0px 0px;
-  }
-
-  .nav-about-us {
-    width:20%;
-    padding:0px 0px 0px 0px;
   }
 }

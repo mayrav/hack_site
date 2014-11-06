@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+	#col-padding-sm-plus {
+    padding:0px 8px 0px 8px;
+  }
+
+  #row-zeroed-for-sm-plus {
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    display:block;
+  }
+
+  .row-one-image {
+    background-image:url('fimages/discovery01.jpg');
+    height:126px;
+  }
+
+  #spacer-at-bottom {
+    height:50px;
+  }
+
+}
