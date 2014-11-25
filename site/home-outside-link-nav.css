@@ -10,4 +10,18 @@
 		width:40px;
 		margin:0px 0px 10px 0px;
 	}
+
+	.gen-outside-nav-item-container {
+		float:right;
+		display:inline-block;
+	}
+
+	.gen-outside-nav-item {
+		padding:0px 10px 0px 10px;
+	}
+
+	.gen-outside-nav-item-size {
+		height:32px;
+		width:auto;
+	}
 }
