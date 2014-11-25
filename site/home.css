@@ -147,7 +147,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  
+
   .top-marg {
     margin-top:16px;
   }
