@@ -252,7 +252,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .main-message{
-     font-size:1.625em;
+     font-size:1.6em;
      font-weight:300;
   }
 
