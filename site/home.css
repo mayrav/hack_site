@@ -176,7 +176,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   .main-message{
-    background:rgba(100, 115, 133, .85);
+    background:rgba(100, 115, 133, .90);
     font-size:1.25em;
     font-weight:700;
     line-height:1.5em;
@@ -190,7 +190,7 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
 
   .minor-message {
-    background:rgba(100, 115, 133, .85);
+    background:rgba(100, 115, 133, .90);
     font-size:1.25em;
     font-weight:300;
     line-height:1.5em;
