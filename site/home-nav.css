@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
 
 	.top-nav-pad {
-    padding-top:12px;
+    padding-top:8px;
   }
 
   .nav-item-on-left {
@@ -38,7 +38,7 @@
 
 @media (min-width:1050px) {
   .nav-item-on-left {
-    font-size:1.6em;
+    font-size:1.5em;
   }
 
   .nav-item-on-center {
