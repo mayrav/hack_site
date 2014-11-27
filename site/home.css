@@ -177,8 +177,8 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
   .main-message{
     background:rgba(100, 115, 133, .85);
-    font-size:20px;
-    font-weight:300;
+    font-size:1.25em;
+    font-weight:700;
     line-height:1.5em;
     padding:10px 8px 10px 10px;
     color:#fff;
@@ -252,7 +252,8 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .main-message{
-     font-size:24px;
+     font-size:1.625em;
+     font-weight:300;
   }
 
     .minor-message{
