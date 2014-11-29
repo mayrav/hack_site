@@ -145,6 +145,45 @@ a#proj-link:visited {
     border-color:rgba(255,255,255,.5);
   }
 
+  .project-title {
+    margin-top:14px;
+    margin-top:10px;
+    font-size:2.125em;
+    font-weight:400
+  }
+
+  .project-general-text {
+    font-size:1.1875em;
+    font-weight:300;
+  }
+
+  .wanna-help-row {
+    margin-top:16px;
+  }
+
+  .wanna-help-container {
+    background-color:#333;
+    padding:8px 6px 8px 0px;
+    border:solid;
+    border-width:2px;
+    border-radius:8px;
+    border-color:rgba(255,255,255,.8);
+    color:rgba(255,255,255,.9);
+  }
+
+  .wanna-help-title {
+    margin:0px 0px 8px 0px;
+    font-size:1.5em;
+    font-weight:400;
+  }
+
+  .wanna-help-link {
+    display:inline-block;
+    margin:0px 14px 0px 14px;
+    padding:6px 6px 6px 6px;
+    background-color:rgba(255,255,255,.2);
+  }
+
   #spacer-row-below-nav {
     height:12px;
   }
