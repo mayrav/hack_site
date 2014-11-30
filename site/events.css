@@ -104,6 +104,41 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 }
 
 @media (min-width: 768px) {
+  #container2 {
+    clear:left;
+    float:left;
+    width:100%;
+    overflow:hidden;
+    background:yellow;
+  }
+
+  #container1 {
+    float:left;
+    width:100%;
+    position:relative;
+    //background:red;
+    right:52%;
+  }
+
+
+
+  #col1 {
+    float:left;
+    width:47%;
+    position:relative;
+    left:52%;
+    overflow:hidden;
+  }
+  #col2 {
+    float:left;
+    width:46%;
+    position:relative;
+    left:56%;
+    overflow:hidden;
+  }
+
+
+
   #events-details {
     font-size:15px;
   }
