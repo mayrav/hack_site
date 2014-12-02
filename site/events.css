@@ -104,39 +104,90 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 }
 
 @media (min-width: 768px) {
-  #container2 {
-    clear:left;
-    float:left;
-    width:100%;
-    overflow:hidden;
-    background:yellow;
-  }
 
-  #container1 {
-    float:left;
-    width:100%;
-    position:relative;
-    //background:red;
-    right:52%;
-  }
+.past-event-padding {
+  padding-top:20px;
+}
 
+.events-container-border {
+  border-color:rgb(100, 115, 133);
+  border-style:solid;
+  border-width:2px;
+  border-radius:2px;  
+}
 
+.events-meetup-container {
+  border-style:solid;
+  border-radius:2px;
+  border-color:#fff;
+  border-width:1px;
+}
 
-  #col1 {
-    float:left;
-    width:47%;
-    position:relative;
-    left:52%;
-    overflow:hidden;
-  }
-  #col2 {
-    float:left;
-    width:46%;
-    position:relative;
-    left:56%;
-    overflow:hidden;
-  }
+.events-container-padding {
+  padding-top:10px;
+  padding-bottom:10px;
+}
 
+.events-container-sizing {
+  padding-bottom:8px;
+  height:250px;
+}
+
+.events-container-header {
+  font-size:2.25em;
+  font-weight:400;
+  color:#eee;
+}
+
+.events-sub-header {
+  font-size:1.75em;
+  font-weight:400
+}
+
+.events-container-text-reg {  
+  font-weight:300;
+  line-height:1.3em;
+  color:rgb(208, 213, 216);
+  font-size:1.3em;  
+}
+
+.events-container-line-item-text {
+  font-size:1.2em;
+  font-weight:300;
+  line-height:1.2em;
+  color:rgb(208, 213, 216);
+}
+
+.events-meetup-text {
+  padding-top:10px;
+  font-size:1.375em;
+  font-weight:300;
+}
+
+.next-event-rsvp {
+  padding:0px 20px 0px 20px;
+  font-size:1.25em;
+  font-weight:300;
+  color:#fff;
+  width:100%;
+  background-color:rgb(100, 115, 133);
+  border-style:solid;
+  border-width:1px;
+  border-color:#999;
+  border-radius:5px;
+}
+
+.upcoming-event-rsvp {
+  font-size:1.0em;
+  font-weight:300;
+  padding:1px 0px 1px 0px;
+  background-color:rgb(100, 115, 133);
+  border-color:#999;
+  border-style:solid;
+  border-width:1px;
+  background-color:rgb(100, 115, 133);
+  border-radius:5px;
+}
 
 
   #events-details {
