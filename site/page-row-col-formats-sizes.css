@@ -1,13 +1,4 @@
 /* X-SMALL */
-
-.outer {
-  margin:50px 16px 0px 16px;
-}
-
-/* SMALL PLUS */
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
   .zero-pad {
     padding:0px;
   }
@@ -21,6 +12,31 @@
     margin-right:-8px;
   }
 
+  .outer {
+    margin:50px 16px 0px 16px;
+  }
+
+/* SMALL PLUS */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  .zero-pad {
+    padding:0px;
+  }
+
+  .zero-marg {
+    margin:0px;
+  }
+
+  .lt-rt-neg-marg {
+    margin-left:-8px;
+    margin-right:-8px;
+  }
+
+  .outer {
+    margin:50px 16px 0px 16px;
+  }
 }
 
 

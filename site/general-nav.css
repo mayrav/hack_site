@@ -15,3 +15,29 @@
   padding:3px 0px 3px 0px;
   font-size:1.125em;
 }
+
+.menu-next-to-cheveron {
+  font-size:21px;
+  line-height:21px;
+}
+
+.navigation-chevron-menu {
+  text-align:center;
+  padding:10px 0px 10px 0px;
+  border-top-style:solid;
+  border-top-width:2px;
+  border-top-color:#36464F;
+}
+.chevron-down {  
+  display:inline-block;
+  margin-left:8px;
+}
+.chevron-up-img {
+  display:none;
+}
+.chevron-up {
+  display:inline-block;
+  margin-left:8px;
+}
+
+.navigation-under-chevron-items {display:none;}
