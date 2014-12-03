@@ -80,11 +80,12 @@
 
 /* for all sized devices */
 
-.main-message-positioning {
-
-    position:absolute;
-    top:10%;
-  }
+.main-message-positioning .col-xs-1 {
+    width:0%;
+}
+.main-message-positioning .col-xs-10 {
+    width:100%;
+}
 
 .main-message{
   background:rgba(100, 115, 133, .90);
@@ -93,6 +94,10 @@
   line-height:1.5em;
   padding:10px 8px 10px 14px;
   color:#fff;
+}
+
+.main-block {
+  display:none;
 }
 
 
@@ -159,17 +164,25 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     position:absolute;
     top:5%;
   }
+  .main-message-positioning .col-xs-1 {
+    width:8.33333%;
+  }
+  .main-message-positioning .col-xs-10 {
+    width:83.3333%;
+  }
+
+  .main-block {
+    display:block;
+  }
 }
 
 @media (min-width: 625px) {
   .main-message-positioning {
-    position:absolute;
     top:10%;
   }
 }
 @media (min-width: 755px) {
   .main-message-positioning {
-    position:absolute;
     top:20%;
   }
 }
