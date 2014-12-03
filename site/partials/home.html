@@ -6,21 +6,23 @@
   <!--     XS     --> 
   <div id="xs">
     <div class="row zero-marg lt-rt-neg-marg">
-      <div class="col-xs-3 zero-pad lt-rt-col-pad" style="margin-bottom:8px;">
-        <div class="menu-next-to-cheveron" style="display:inline;float:left;padding:6px 10px 0px 10px;height:32px;background:rgb(78,93,108);">
+      <div class="col-xs-3 zero-pad lt-rt-col-pad navigation-chevron-menu">
+        <div class="menu-next-to-cheveron">
           MENU
         </div>
-        <div class="chevron-down" style="display:inline;float:left;height:32px;background:rgb(78,93,108);padding-top:6px; padding-right:8px;">
-          <div class="chevron-down-img;">
+        <div class="chevron-down">
+          <div class="chevron-down-img">
             <img style="height:15px;width:auto"src="images/chevron-down-small.jpg">
           </div>
         </div>
-        <div class="chevron-up" style="display:inline;float:left;">
+        <div class="chevron-up">
           <div class="chevron-up-img">
-            <img style="height:50px;width:auto"src="images/chevron-up.jpg">
+            <img style="height:15px;width:auto"src="images/chevron-up.jpg">
           </div>
-        </div>
+        </div>        
       </div>
+
+
       <div class="col-xs-1 zero-pad lt-rt-col-pad">
       </div>
       <div class="col-xs-8 zero-pad lt-rt-col-pad" style="padding-bottom:0px;">
@@ -55,10 +57,29 @@
         </div>
       </div>
     </div>
+    <div class="navigation-under-chevron-items" style="clear:left;position:absolute;z-index:2;">
+      <div class = "navigation-sub-class">
+        <div class="li">
+          <a href="http://www.meetup.com/Arlington-Code-Shop/" style="color:#ddd">Projects</a>
+        </div>
+        <div class="li">
+          <a href="http://www.meetup.com/Arlington-Code-Shop/"  style="color:#ddd">Events</a>
+        </div>
+        <div class="li">
+          <a href="http://www.meetup.com/Arlington-Code-Shop/"  style="color:#ddd">Resources</a>
+        </div>
+        <div class="li">
+          <a href="http://www.meetup.com/Arlington-Code-Shop/"  style="color:#ddd">Blog</a>
+        </div>
+        <div class="li">
+          <a href="http://www.meetup.com/Arlington-Code-Shop/"  style="color:#ddd">About Us</a>
+        </div>
+      </div>      
+    </div> 
 
-    <div class="row zero-marg" style="margin-bottom:16px">
+    <div class="row zero-marg" style="margin-bottom:16px;position:relative;z-index:-2;">
       <div class="col-xs-12 lt-rt-col-pad xs-header-background">
-        <div style="azheight:20px">
+        <div>
           <img class="center-image-xs" src="images/codefornova-banner.jpg" class="img-responsive" style="height:150px;padding-top:8px; padding-bottom:8px;background-color:rgb(100, 115, 133);" >
         </div>
       </div>
@@ -87,28 +108,12 @@
       </div>    
     </div>  -->
 
-    <div class="navigation-under-chevron-items">
-      <div class="li">
-        <a href="http://www.meetup.com/Arlington-Code-Shop/" id="xs-nav-bar-font">MeetUp</a>
-      </div>
-      <div class="li">
-        <a href="http://www.meetup.com/Arlington-Code-Shop/" id="xs-nav-bar-font">MeetUp</a>
-      </div>
-      <div class="li">
-        <a href="http://www.meetup.com/Arlington-Code-Shop/" id="xs-nav-bar-font">MeetUp</a>
-      </div>
-      <div class="li">
-        <a href="http://www.meetup.com/Arlington-Code-Shop/" id="xs-nav-bar-font">MeetUp</a>
-      </div>
-      <div class="li">
-        <a href="http://www.meetup.com/Arlington-Code-Shop/" id="xs-nav-bar-font">MeetUp</a>
-      </div>
-    </div> 
+
 
     <div class="row zero-marg  lt-rt-neg-marg" style="margin-bottom:16px">
      <div class="col-xs-12 lt-rt-col-pad">      
         <img class="img-responsive" src="images/silver-w-building-blue-sky-xs.jpg">  
-        <div class="main-message-positioning zero-marg" style="margin-right:8px; top:15%">
+        <div class="main-message-positioning zero-marg">
           <div class="col-xs-1  zero-pad">
           </div>
           <div class="col-xs-10 zero-pad">
@@ -309,7 +314,7 @@
 <script>
 $(document).ready(function(){
   $(".navigation-chevron-menu").click(function(){
-    $(".navigation-under-chevron-items").slideToggle(500);
+    $(".navigation-sub-class").slideToggle(500);
     $(".chevron-down-img").toggle(0);
     $(".chevron-up-img").toggle(0);
   });

@@ -16,26 +16,8 @@
   font-size:1.125em;
 }
 
-.menu-next-to-cheveron {
-  font-size:18px;
-  line-height:21px;
-}
 
-.navigation-chevron-menu {
-  text-align:center;
-  padding:8px 0px 8px 4px;
-  border-top-style:solid;
-  border-top-width:2px;
-  border-top-color:#36464F;
-}
-.chevron-down {  
-  display:inline-block;
-}
-.chevron-up-img {
-  display:none;
-}
-.chevron-up {
-  azdisplay:inline-block;
-}
+#xs-nav-bar-font {
+  font-size:1.2em;
 
-.navigation-under-chevron-items {display:none;}
+}

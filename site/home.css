@@ -76,15 +76,14 @@
   background-color:rgb(78, 93, 108);
 }
 
-#xs-nav-bar-font {
-  font-size:1.0em;
-}
+
 
 /* for all sized devices */
 
 .main-message-positioning {
+
     position:absolute;
-    top:25%;
+    top:10%;
   }
 
 .main-message{
@@ -152,6 +151,26 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
   #billboard-for-xs {
     display:none;
+  }
+}
+
+@media (min-width: 600px) {
+  .main-message-positioning {
+    position:absolute;
+    top:5%;
+  }
+}
+
+@media (min-width: 625px) {
+  .main-message-positioning {
+    position:absolute;
+    top:10%;
+  }
+}
+@media (min-width: 755px) {
+  .main-message-positioning {
+    position:absolute;
+    top:20%;
   }
 }
 
