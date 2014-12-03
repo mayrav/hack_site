@@ -1,7 +1,9 @@
-@media (min-width: 768px) {
-	#col-padding-sm-plus {
+#col-padding-sm-plus {
     padding:0px 8px 0px 8px;
   }
+
+@media (min-width: 768px) {
+	
 
   #row-zeroed-for-sm-plus {
     margin:0px 0px 0px 0px;

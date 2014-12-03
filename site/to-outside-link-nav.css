@@ -1,15 +1,22 @@
-@media (min-width: 768px) {
+	.gen-outside-nav-item-container {
+		float:right;
+		display:inline-block;
+	}
 
-	.outside-nav-item {
-		float:right;
-		width:35px;
-		margin:0px 10px 10px 0px;
+	.gen-outside-nav-item {
+		padding:0px 16px 0px 16px;
 	}
-	.outside-nav-item-rt {
-		float:right;
-		width:35px;
-		margin:0px 0px 10px 0px;
+
+	.gen-outside-rt-nav-item {
+		padding:0px 1px 0px 16px;
 	}
+
+	.gen-outside-nav-item-size {
+		height:32px;
+		width:auto;
+	}
+
+@media (min-width: 768px) {
 
 	.gen-outside-nav-item-container {
 		float:right;

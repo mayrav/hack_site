@@ -12,8 +12,13 @@
     margin-right:-8px;
   }
 
+  .lt-rt-col-pad {
+    padding-left:8px;
+    padding-right:8px;
+  }
+
   .outer {
-    margin:50px 16px 0px 16px;
+    margin:16px 16px 0px 16px;
   }
 
 /* SMALL PLUS */
