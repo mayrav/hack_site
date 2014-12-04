@@ -68,5 +68,16 @@
 }
 
 
+@media (min-width: 768px) {
+  .project-desc {
+  padding-right:16px;
+}
+
+.project-help {
+  padding-left:16px;
+}
+}
+
+
 
 /* Small devices (tablets, 768px and up) */
