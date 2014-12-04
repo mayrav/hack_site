@@ -1,239 +1,57 @@
 /* sizes X-small and up are first level  */
 
-.by-tech-label {
-  font-size:16px;
-  color:rgb(78, 93, 108);
-  font-weight:700;
-  padding:4px 0px 0px 0px;
-  float:left;
-   display:inline-block;
-}
 
-.by-tech {
-  font-size:16px;
-  color:#647385;
-  font-weight:700;
-  padding:4px 0px 0px 4px;
-  float:left;
-  display:inline-block;
-}
 
-#center-nav-blocks-sm {
-  display:block;
-  text-align:center;
-  margin:0px auto 0px auto;
+
+
+.technologies-container {
+  font-size:1.125em;
+  font-weight:400;
   padding:6px 0px 6px 0px;
+  border:solid; border-width:3px;
+  border-radius:0px;
+  border-color:rgba(255,255,255,.5);
+  color:rgba(255,255,255,.9);
+  margin-bottom:10px;
 }
 
-#center-nav-blocks-sm {
-  font-size:18px;
+.technology-container {
+  width:70%;
   text-align:center;
-  color:rgb(208, 213, 216);
-  padding-top:5px;
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  padding:2px 2px 2px 2px;
+  margin:3px 3px 3px 3px;
+  border-color:rgba(255,255,255,.5);
 }
 
-#col-padding-sm-plus-left {
-    padding:0px 8px 0px 0px;
-  }
-
-#col-zeroed {
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
+.project-title {
+  margin-top:14px;
+  margin-top:10px;
+  font-size:2.125em;
+  font-weight:400
 }
 
-.project-container {
-  padding:0px 0px 0px 4px;
+.project-general-text {
+  font-size:1.1875em;
+  font-weight:300;
 }
 
-.project-description {
-  font-size:16px;
-  font-weight:700;
-  color:#353535;
-  padding:0px 0px 0px 0px;
+.wanna-help-row {
+  margin-top:16px;
 }
 
-#nav-bar-font-sm {
-  font-size:1.0em;
-}
-
-
-.proj-links-container {
-  margin:12px 0px 6px 0px;
-}
-
-a#proj-link {
-  font-size:16px;
-  padding:4px 6px 4px 6px;
-  color:#d0d5d8;
-  text-decoration:none;
-  background-color:rgba(78,93,108,1.0);
-  margin:2px 2px 2px 2px;
-}
-
-a#proj-link:active {
-  margin:2px 2px 2px 2px;
-  padding:4px 6px 4px 6px;;
-  background-color:#647385;
-  color:#fff;
-}
-
-a#proj-link:hover {
-  margin:2px 2px 2px 2px;
-  padding:4px 6px 4px 6px;;
-  background-color:#647385;
-  color:#fff;
-}
-
-a#proj-link:visited {
-  margin:2px 2px 2px 2px;
-  font-size:20px;
-  padding:4px 6px 4px 6px;;
-  color:#d0d5d8;
-}
-
-
-
-.project-name {
-  font-size:22px;
-  color:rgb(78, 93, 108);
-  font-weight:700;
-  padding:4px 0px 0px 0px;
-}
-
-#project-row {
-  margin:0px 0px 12px 0px;
-  padding:0px 0px 6px 0px;
-  background-color:#d0d5da;
-}
-
-#row-zeroed-nav-bar-for-sm-plus {
-  display:none;
-}
-
-#spacer-row-below-nav {
-  height:16px;
-}
-
-#spacer-row-below-header {
-  height:16px;
+.wanna-help-container {
+  background-color:#333;
+  padding:8px 6px 8px 0px;
+  border:solid;
+  border-width:2px;
+  border-radius:8px;
+  border-color:rgba(255,255,255,.8);
+  color:rgba(255,255,255,.9);
 }
 
 
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-
-  .technologies-container {
-    font-size:1.125em;
-    font-weight:400;
-    padding:6px 0px 6px 0px;
-    border:solid; border-width:3px;
-    border-radius:0px;
-    border-color:rgba(255,255,255,.5);
-    color:rgba(255,255,255,.9);
-    margin-bottom:10px;
-  }
-
-  .technology-container {
-    width:70%;
-    text-align:center;
-    border:solid;
-    border-width:1px;
-    border-radius:3px;
-    padding:2px 2px 2px 2px;
-    margin:3px 3px 3px 3px;
-    border-color:rgba(255,255,255,.5);
-  }
-
-  .project-title {
-    margin-top:14px;
-    margin-top:10px;
-    font-size:2.125em;
-    font-weight:400
-  }
-
-  .project-general-text {
-    font-size:1.1875em;
-    font-weight:300;
-  }
-
-  .wanna-help-row {
-    margin-top:16px;
-  }
-
-  .wanna-help-container {
-    background-color:#333;
-    padding:8px 6px 8px 0px;
-    border:solid;
-    border-width:2px;
-    border-radius:8px;
-    border-color:rgba(255,255,255,.8);
-    color:rgba(255,255,255,.9);
-  }
-
-  .wanna-help-title {
-    margin:0px 0px 8px 0px;
-    font-size:1.5em;
-    font-weight:400;
-  }
-
-  .wanna-help-link {
-    display:inline-block;
-    margin:0px 14px 0px 14px;
-    padding:6px 6px 6px 6px;
-    background-color:rgba(255,255,255,.2);
-  }
-
-  #spacer-row-below-nav {
-    height:12px;
-  }
-
-  #spacer-row-below-header {
-    height:12px;
-  }
-
-  .regular-nav-item-on-center {
-    /*background-color:rgba(78,93,108,1.0);*/
-    line-height:1.0em;
-    padding:3px 0px 3px 0px;
-    text-align:center;
-    font-size:24px;
-    margin:2px 0px 0px 0px;
-  }
-
-  a.reg-nav-bar-ref-for-sm-plus:link { 
-    font-size:18px;
-    padding:3px 6px 3px 6px;
-    color:#d0d5d8;
-    text-decoration:none;
-  }
-  a.reg-nav-bar-ref-for-sm-plus:active {
-    padding:3px 6px 3px 6px;
-    background-color:#647385;
-    color:#fff;}
-  a.reg-nav-bar-ref-for-sm-plus:hover {
-    padding:3px 6px 3px 6px;
-    background-color:#647385;
-    color:#fff;}
-  a.reg-nav-bar-ref-for-sm-plus:visited { 
-    font-size:18px;
-    padding:3px 6px 3px 6px;
-    color:#d0d5d8;
-  }
-
-  .row-one-projects-message{
-    background:rgba(100, 115, 133, .85);
-    font-size:24px;
-    font-weight:400;
-    padding:10px 8px 10px 10px;line-height:1.2em;
-    margin:36px 0px 0px 0px;
-  }
-  #row-zeroed-nav-bar-for-sm-plus {
-    background-color:rgb(78, 93, 108);
-    margin:0px 0px 0px 0px;
-    padding:0px 0px 0px 0px;
-    display:block;
-  }
-}
-
-
