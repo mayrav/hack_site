@@ -9,7 +9,20 @@
   background:rgb(78,93,108);
 }
 
+.row-navigation-chevron-menu {
+  display:block;
+  text-align:center;
+  font-size:18px;
+  line-height:21px;
+  text-align:center;
+  padding:6px 10px 0px 10px;
+  height:32px;
+  background:rgb(78,93,108);
+  margin-bottom:16px;
+}
+
 .navigation-chevron-menu {
+  display:none;
   margin-bottom:8px;
 }
 .chevron-down {  
@@ -61,6 +74,16 @@
   border-top-width:1px;
   border-top-color:#36464F;
  
+}
+
+@media (min-width: 540px) {
+  .navigation-chevron-menu {
+    display:block;
+  }
+
+  .row-navigation-chevron-menu {
+    display:none;
+  }
 }
 
 @media (min-width: 768px) {
