@@ -39,7 +39,12 @@
 }
 
 .wanna-help-row {
-  margin-top:16px;
+  //margin-top:16px;
+}
+
+.wanna-help-title {
+  font-size:1.375em;
+  font-weight:300;
 }
 
 .wanna-help-container {
