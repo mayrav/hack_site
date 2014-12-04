@@ -11,19 +11,8 @@
 #sm-plus {
   display:none;
 }
-/* also turn off items for less than 600px*/
-#billboard-for-xs-less-600{
-  display:none;
-}
-/* Turn Off Items END*/
 
-/* X-SMALL devices Continued...*/
-
-#billboard-for-xs{
-  margin:4px 0px 20px 0px;
-  background-color:rgba(100, 115, 133,1.0);
-  display:block;
-}
+/* for all sized devices */
 
 .center-image-xs {
   display:block;
@@ -37,48 +26,10 @@
   padding:6px 0px 6px 0px;
 }
 
-#col-xs-12-zeroed {
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-}
-
-#header-for-xs {
-  margin-left:0px;
-  margin-right:0px;
-  padding:0px 0px 0px 0px;
-}
-
-#inspiration-container-xs {
-  display:block;
-}
-
-#nav-for-xs {
-  margin-left:0px;
-  margin-right:0px;
-  padding:0px 0px 0px 0px;
-}
-
-#spacer-row-below-header-xs{
-    height:15px;
-}
-
-#tags-xs {
-  display:block;
-}
-
 .xs-header-background {
   background-color:rgb(100, 115, 133);
-  //padding:0px 0px 0px 0px;
 }
 
-.xs-nav-bar-buttons {
-  /*width:100%;*/
-  background-color:rgb(78, 93, 108);
-}
-
-
-
-/* for all sized devices */
 
 .main-message-positioning .col-xs-1 {
     width:0%;
@@ -122,11 +73,6 @@
   display:none;
 }
 
-
-#general-row-spacer {
-  height:16px;
-}
-
 .meetup-link {
   border-color:#838F9D;
   border-style:solid;
@@ -144,42 +90,7 @@ a.meetup-link:visited {background-color:#838F9D;color:#fff;}
 a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 
-.minor-link {
-  border-color:#838F9D;
-  border-style:solid;
-  border-width:1px;
-  background-color:#838F9D;
-  font-size:16px;
-  font-weight:700;
-  margin:4px 4px 4px 4px; /*overwritten in xs to be zero margins on left and right*/
-  padding:1px 7px 1px 7px;
-  white-space:nowrap;
-}
 
-a.minor-link:link{color:#fff;text-decoration:none;}
-a.minor-link:visited {background-color:#838F9D;color:#fff;}
-a.minor-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
-a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
-
-#row-zeroed {
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-}
-
-#spacer-top {
-  height:300px;
-}
-
-@media (max-width: 500px) {
-  #billboard-for-xs-less-600{
-    margin:15px 0px 20px 0px;
-    background-color:rgba(100, 115, 133,1.0);
-    display:block;
-  }
-  #billboard-for-xs {
-    display:none;
-  }
-}
 @media(min-width:580px) {
 
   .minor-row-a {
@@ -208,10 +119,10 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
   }
   .minor-row .col-xs-9 {
     width:75%;
-}
-.minor-row .col-xs-3 {
+  }
+  .minor-row .col-xs-3 {
     width:25%;
-}
+  }
 }
 
 @media (min-width: 600px) {
@@ -277,9 +188,6 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     margin-bottom:16px;
   }
 
-
-
-
   .abs-pos-img {
     position:absolute;
     right:8px;
@@ -315,33 +223,6 @@ a.minor-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     padding:10px 8px 10px 10px;
     color:#fff;
   }
-
-  /* Hide items that are only for XS */
-  #billboard-for-xs{
-    display:none;
-  }
-
-  #header-for-xs {
-    display:none;
-  }
-
-  #nav-for-xs {
-    display:none;
-  }
-
-  #tags-xs {
-    display:none;
-  }
-
-  #spacer-row-below-header-xs{
-    display:none;
-  }
-
-  #inspiration-container-xs {
-  display:none;
-  }
-  /* End hiding items that are only for XS */
-
 }
 
 @media (min-width:818px) {
