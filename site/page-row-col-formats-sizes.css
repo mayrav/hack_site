@@ -40,7 +40,7 @@
   }
 
   .outer {
-    margin:50px 16px 0px 16px;
+    margin:82px 16px 0px 16px;
   }
 }
 
@@ -48,6 +48,6 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .outer {
-    margin:50px 68px 0px 68px;
+    margin:74px 68px 0px 68px;
   }
 }
