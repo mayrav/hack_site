@@ -31,47 +31,7 @@
 }
 
 
-.main-message-positioning .col-xs-1 {
-    width:0%;
-}
-.main-message-positioning .col-xs-10 {
-    width:100%;
-}
 
-.main-message{
-  background:rgba(100, 115, 133, .90);
-  font-size:1.5em;
-  font-weight:300;
-  line-height:1.5em;
-  padding:10px 8px 10px 14px;
-  color:#fff;
-}
-
-.minor-row-a {
-  display:none;
-}
-
-.minor-row-b {
-  display:block;
-}
-
-.minor-message-positioning {
-    position:absolute;
-    top:10%;
-  }
-
-.minor-message {
-  background:rgba(100, 115, 133, .90);
-  font-size:1.5em;
-  font-weight:300;
-  line-height:1.5em;
-  padding:10px 8px 10px 10px;
-  color:#fff;
-}
-
-.main-block {
-  display:none;
-}
 
 .meetup-link {
   border-color:#838F9D;
@@ -89,85 +49,6 @@ a.meetup-link:link{color:#fff;text-decoration:none;}
 a.meetup-link:visited {background-color:#838F9D;color:#fff;}
 a.meetup-link:hover {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
-
-
-@media(min-width:580px) {
-
-  .minor-row-a {
-    display:block;
-  }
-
-  .minor-row-b {
-    display:none;
-  }
-  .minor-message-positioning {
-    position:absolute;
-    top:5%;
-  }
-
-  .minor-message {
-    background:rgba(100, 115, 133, .90);
-    font-size:1.5em;
-    font-weight:300;
-    line-height:1.5em;
-    padding:10px 8px 10px 10px;
-    color:#fff;
-  }
-
-  .minor-block: {
-    //display:block;
-  }
-  .minor-row .col-xs-9 {
-    width:75%;
-  }
-  .minor-row .col-xs-3 {
-    width:25%;
-  }
-}
-
-@media (min-width: 600px) {
-  .main-message-positioning {
-    position:absolute;
-    top:5%;
-  }
-  .main-message-positioning .col-xs-1 {
-    width:8.33333%;
-  }
-  .main-message-positioning .col-xs-10 {
-    width:83.3333%;
-  }
-
-  .main-block {
-    display:block;
-  }
-}
-
-@media (min-width: 625px) {
-  .main-message-positioning {
-    top:10%;
-  }
-}
-
-@media (min-width: 627px) {
-  .minor-message-positioning {
-    position:absolute;
-    top:20%;
-  }
-  .minor-message-positioning .col-xs-1 {
-    width:8.33333%;
-  }
-  .minor-message-positioning .col-xs-10 {
-    width:83.3333%;
-  }
-  .minor-block {
-  display:block;
-  }
-}
-@media (min-width: 755px) {
-  .main-message-positioning {
-    top:20%;
-  }
-}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
@@ -194,68 +75,5 @@ a.meetup-link:active {background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
     padding-left:16px;
     bottom:0px;
     z-index:-2;
-  }
-
-  .main-message-positioning {
-    position:absolute;
-    top:25%;
-  }
-
-  .main-message{
-    background:rgba(100, 115, 133, .90);
-    font-size:1.25em;
-    font-weight:700;
-    line-height:1.5em;
-    padding:10px 8px 10px 14px;
-    color:#fff;
-  }
-
-  .minor-message-positioning {
-    position:absolute;
-    top:30%;
-  }
-
-  .minor-message {
-    background:rgba(100, 115, 133, .90);
-    font-size:1.25em;
-    font-weight:300;
-    line-height:1.5em;
-    padding:10px 8px 10px 10px;
-    color:#fff;
-  }
-}
-
-@media (min-width:818px) {
-  .main-message-positioning {    
-    top:25%;
-  }
-  .main-message {
-    font-weight:400;
-    font-size:22px;
-  }
-}
-
-
-/* Medium devices (desktops, 992px and up) */
-
-@media (min-width:1050px) {
-  .main-message-positioning {
-    top:34%;
-  }
-
-  .minor-message{
-    font-size:1.4em;
-  }
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .main-message{
-     font-size:1.6em;
-     font-weight:300;
-  }
-
-    .minor-message{
-    font-size:1.5em;
   }
 }
