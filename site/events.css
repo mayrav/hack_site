@@ -103,7 +103,7 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 
 }
 
-@media (min-width: 768px) {
+
 
 .past-event-padding {
   padding-top:20px;
@@ -130,7 +130,7 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 
 .events-container-sizing {
   padding-bottom:8px;
-  height:250px;
+  height:290px;
 }
 
 .events-container-header {
@@ -146,9 +146,9 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 
 .events-container-text-reg {  
   font-weight:300;
-  line-height:1.3em;
+  line-height:1.2em;
   color:rgb(208, 213, 216);
-  font-size:1.3em;  
+  font-size:1.2em;  
 }
 
 .events-container-line-item-text {
@@ -206,5 +206,12 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
   }
   #event-title-xs {
     display:none;
+  }
+
+
+@media (min-width: 820px) {
+  .events-container-sizing {
+    padding-bottom:8px;
+    height:250px;
   }
 }
