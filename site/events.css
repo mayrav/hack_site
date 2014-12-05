@@ -1,109 +1,9 @@
-.row-05-31-14 {
-    background-image:url('images/05-31-14-events.jpg');
-    height:268px;
-}
 
-  .event-05-31-14{
-    background:rgba(100, 115, 133, .85);
-    font-size:24px;
-    font-weight:400;
-    padding:10px 8px 10px 10px;line-height:1.2em;
-    margin:65px 0px 0px 0px;
-  }
-  
-  .underline-div {
-    float:left;
-    border-bottom-width:1px;
-    border-bottom-style:solid;
-    border-bottom-color:rgb(208, 213, 216);
-  }
-
-  #event-header-for-xs {
-    margin-left:0px;
-    margin-right:0px;
-    padding:10px 0px 10px 0px;
-    font-size:20px;
-    font-weight:700;
-    background-image:url('images/silverInternet13-xs.jpg');
-  }
-
-
-#events-xs-spacer {
-  height:10px;
-}
-
-  #events-details {
-    font-size:18px;
-  }
-
-  #events-details-xs-500 {
-    display:none;
-  }
-
-  #events-details-xs {
-    display:block;
-  }
-
-  #event-title-xs {
-    font-size:22px;
-    font-weight:400;
-    text-decoration:underline;
-    padding-bottom:16px;
-  }
-
-  #col-xs-6-zeroed {
-  margin:0px 0px 0px 0px;
-  padding:0px 0px 0px 0px;
-  }
-
-  #col-xs-6-zeroed-right {
-  margin:0px 0px 0px 0px;
-  padding:0px 8px 0px 0px;
-  }
-
-  .section-title {
-    font-size:22px;
-    font-weight:400;
-    text-decoration:underline;
-    padding-bottom:8px;
-    color:rgb(208, 213, 216);
-  }
-
-  .section-text {
-    font-size:18px;
-    font-weight:400;
-    color:rgb(208, 213, 216);
-  }
-
-  .section-text-link {
-  border-width:0px;
-  font-size:18px;
-  font-weight:400;
-  white-space:nowrap;
-  text-decoration:underline;
-  color:rgb(208, 213, 216);
-}
 
 a.section-text-link:link{color:#fff;text-decoration:underline}
 a.section-text-link:visited {color:#fff;text-decoration:underline}
 a.section-text-link:hover {color:#fff;text-decoration:none;background-color:#838F9D;color:#fff;border-color:#A2ABB6;}
 a.section-text-link:active {color:#fff;text-decoration:underline}
-
-  #col-padding-sm-plus-left-pictures {
-    padding:4px 8px 0px 0px;
-  }
-
-@media (max-width: 500px) {
-    #events-details-xs-500 {
-    display:block;
-  }
-  #events-details-xs {
-    display:none;
-  }
-
-}
-
-
 
 .past-event-padding {
   padding-top:20px;
@@ -130,7 +30,7 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 
 .events-container-sizing {
   padding-bottom:8px;
-  height:290px;
+  height:auto;
 }
 
 .events-container-header {
@@ -189,25 +89,12 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
   border-radius:5px;
 }
 
-
-  #events-details {
-    font-size:15px;
+@media (min-width: 768px) {
+  .events-container-sizing {
+    padding-bottom:8px;
+    height:290px;
   }
-  #events-details-xs-one-column {
-  margin-left:0px;
-  margin-right:0px;
-  padding:0px 0px 0px 0px;
-  }
-  #event-header-for-xs {
-    display:none;
-  }
-  #events-details-xs {
-    display:none;
-  }
-  #event-title-xs {
-    display:none;
-  }
-
+}
 
 @media (min-width: 820px) {
   .events-container-sizing {
