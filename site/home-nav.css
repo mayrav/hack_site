@@ -23,6 +23,10 @@
   margin-bottom:16px;
 }
 
+.row-navigation-menu-position {
+  display:inline-block;
+}
+
 .navigation-chevron-menu {
   display:none;
   margin-bottom:8px;
@@ -74,9 +78,40 @@
   padding:10px 0px 10px 0px;
   border-top-style:solid;
   border-top-width:1px;
-  border-top-color:#36464F;
- 
+  border-top-color:#36464F; 
 }
+
+.row-navigation-sub-class {display:none;}
+  .li {
+  font-size:1.25em;
+  line-height:1.25em;
+  text-align:center;
+  background-color:rgb(100, 115, 133);
+  :link{ color:#ddd;text-decoration:none;};
+  :visited{ color:#ddd;text-decoration:none;};
+  :hover{ color:#ddd;text-decoration:none;};
+  :active{ color:#ddd;text-decoration:none;};
+  padding:10px 10px 10px 6px;
+  border-top-style:solid;
+  border-top-width:1px;
+  border-top-color:#36464F;
+  }
+
+.row-li-chosen {
+  font-size:40px;
+  line-height:1.5em;
+  text-align:center;
+  :link{ color: #112C46;text-decoration:none;};
+  :visited{ color: #112C46;text-decoration:none;};
+  :hover{ color: #112C46;text-decoration:none;};
+  :active{ color: #55555;text-decoration:none;};
+  padding:10px 0px 10px 0px;
+  border-top-style:solid;
+  border-top-width:1px;
+  border-top-color:#36464F; 
+}
+
+
 
 @media (min-width: 540px) {
   .navigation-chevron-menu {
