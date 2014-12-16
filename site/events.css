@@ -93,6 +93,37 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
   display:none;
 }
 
+.col-xs-1 {
+  width:0%;
+}
+
+.col-xs-10 {
+  width:99%;
+}
+
+.events-meetup-logo img {
+  height:50px;
+  width:auto;
+  float:right;
+  margin-top:15px;
+}
+
+@media (min-width: 515px) {
+  .events-meetup-logo img {
+    height:70px;
+    margin-top:10px;
+  }
+}
+
+@media (min-width: 615px) {
+  .col-xs-1 {
+    width:8.3333%;    
+  }
+  .col-xs-10 {
+    width:83.3333%;
+  }
+}
+
 @media (min-width: 664px) {
   .events-container-sizing {
     padding-bottom:8px;
@@ -104,6 +135,10 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
     float:right;
     float:right;
     margin-left:24px;
+  }
+
+  .events-meetup-logo img {
+    margin-top:0px;
   }
 }
 
