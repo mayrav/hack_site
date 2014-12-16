@@ -126,8 +126,7 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 
 @media (min-width: 664px) {
   .events-container-sizing {
-    padding-bottom:8px;
-    height:290px;
+    padding-bottom:16px;
   }
 
   .event-descriptor-container img {
@@ -145,13 +144,13 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
 @media (min-width: 768px) {
   .events-container-sizing {
     padding-bottom:8px;
-    height:290px;
+    height:270px;
   }
 }
 
 @media (min-width: 820px) {
   .events-container-sizing {
     padding-bottom:8px;
-    height:250px;
+    height:240px;
   }
 }
