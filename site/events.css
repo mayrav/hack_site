@@ -89,6 +89,24 @@ a.section-text-link:active {color:#fff;text-decoration:underline}
   border-radius:5px;
 }
 
+.event-descriptor-container img {
+  display:none;
+}
+
+@media (min-width: 664px) {
+  .events-container-sizing {
+    padding-bottom:8px;
+    height:290px;
+  }
+
+  .event-descriptor-container img {
+    display:block;
+    float:right;
+    float:right;
+    margin-left:24px;
+  }
+}
+
 @media (min-width: 768px) {
   .events-container-sizing {
     padding-bottom:8px;
