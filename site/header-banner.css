@@ -1,0 +1,17 @@
+.header-banner-row {
+	margin-bottom:16px;
+	position:relative;
+	z-index:-2;
+}
+
+.center-image-xs {
+  display:block;
+  margin:0px auto 0px auto;
+}
+
+.center-image-xs {
+	height:150px;
+	padding-top:8px; 
+	padding-bottom:8px;
+	background-color:rgb(100, 115, 133);
+}
