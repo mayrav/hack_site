@@ -11,6 +11,10 @@
 		padding:0px 1px 0px 16px;
 	}
 
+	.gen-outside-lt-nav-item {
+		padding:0px 1px 0px 1px;
+	}
+
 	.gen-outside-nav-item-size {
 		height:32px;
 		width:auto;
