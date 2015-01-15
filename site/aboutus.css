@@ -1,0 +1,21 @@
+  .aboutus-intro {
+    font-size:1.3em;
+  }
+
+  .aboutus-talent {
+  	font-size:1.3em;
+  }
+  
+
+  @media (min-width: 768px) {
+    .aboutus-intro {
+     font-size:1.4em;
+    }
+
+  }
+
+  @media (min-width: 970px) {
+    .aboutus-intro {
+     font-size:1.5em;
+    }
+  }
