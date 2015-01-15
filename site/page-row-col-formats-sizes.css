@@ -12,6 +12,11 @@
     margin-right:-8px;
   }
 
+  .lt-rt-pos-marg {
+    margin-left:8px;
+    margin-right:8px;
+  }
+
   .lt-rt-col-pad {
     padding-left:8px;
     padding-right:8px;
