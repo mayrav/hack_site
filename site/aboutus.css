@@ -5,7 +5,39 @@
   .aboutus-talent {
   	font-size:1.3em;
   }
+
+  .aboutus-header {
+  	font-size:2.25em;
+  }
+
+  .aboutus-intro-container {
+  	margin-bottom:34px;
+  }
   
+  .aboutus-name {
+  	font-size:1.1875em;
+  	line-height:1.2em;
+  	font-weight:300;
+  }
+
+  .aboutus-member-desc {
+  	margin-top:10px;
+  	font-size:1.125em;
+  	line-height:1.125em;
+  	font-weight:300;
+  }
+
+  .aboutus-technology-container {
+  //width:80%;
+  text-align:center;
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  padding:2px 2px 2px 2px;
+  margin:3px 3px 3px 3px;
+  border-color:rgba(255,255,255,.5);
+  font-weight:300;
+}
 
   @media (min-width: 768px) {
     .aboutus-intro {
