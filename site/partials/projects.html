@@ -39,7 +39,8 @@
 
           <div class="gen-outside-nav-item-container">
             <div class="gen-outside-nav-item">
-              <img src="images/github02.png" class="gen-outside-nav-item-size" >
+              <a href="https://github.com/sarl-hackerspace">
+              <img src="images/github02.png" class="gen-outside-nav-item-size"></a>
             </div>
           </div> 
 
@@ -52,7 +53,8 @@
 
           <div class="gen-outside-nav-item-container">
             <div class="gen-outside-lt-nav-item">
-              <img src="images/twitter_logo.png" class="gen-outside-nav-item-size" >
+              <a href="https://twitter.com/codenovabrigade">
+              <img src="images/twitter_logo.png" class="gen-outside-nav-item-size"></a>
             </div>
           </div>
         </div>
@@ -83,9 +85,9 @@
         </div>
       </div>
 
-      <div class="row zero-marg" style="margin-bottom:16px;position:relative;z-index:-2;">
+      <div class="row zero-marg" style="margin-bottom:16px;position:relative;">
         <div class="col-xs-12 lt-rt-col-pad xs-header-background">
-            <img class="center-image-xs" src="images/codefornova-banner.jpg" style="height:150px;padding-top:8px; padding-bottom:8px;background-color:rgb(100, 115, 133);" >
+            <a href="#/home"><img class="center-image-xs" src="images/codefornova-banner.jpg" style="height:150px;padding-top:8px; padding-bottom:8px;background-color:rgb(100, 115, 133);" ></a>
         </div>
       </div>
 
@@ -211,7 +213,8 @@
 
                   <div class="gen-outside-nav-item-container">
                     <div class="gen-outside-nav-item">
-                      <img src="images/github02.png" class="gen-outside-nav-item-size" >
+                      <a href="https://github.com/sarl-hackerspace">
+                      <img src="images/github02.png" class="gen-outside-nav-item-size"></a>
                     </div>
                   </div> 
 
@@ -224,7 +227,8 @@
 
                   <div class="gen-outside-nav-item-container">
                     <div class="gen-outside-nav-item">
-                      <img src="images/twitter_logo.png" class="gen-outside-nav-item-size" >
+                      <a href="https://twitter.com/codenovabrigade">
+                      <img src="images/twitter_logo.png" class="gen-outside-nav-item-size"></a>
                     </div>
                   </div>   
                 </div> 
@@ -417,6 +421,16 @@
 $(document).ready(function(){
   $(".navigation-chevron-menu").click(function(){
     $(".navigation-sub-class").slideToggle(500);
+    $(".chevron-down-img").toggle(0);
+    $(".chevron-up-img").toggle(0);
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $(".row-navigation-chevron-menu").click(function(){
+    $(".row-navigation-sub-class").slideToggle(500);
     $(".chevron-down-img").toggle(0);
     $(".chevron-up-img").toggle(0);
   });

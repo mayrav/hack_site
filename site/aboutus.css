@@ -1,0 +1,159 @@
+.aboutus-intro {
+  font-size:1.3em;
+}
+
+.aboutus-talent {
+  font-size:1.3em;
+}
+
+.aboutus-header {
+  font-size:2.25em;
+}
+
+.aboutus-intro-container {
+  margin-bottom:34px;
+}
+  
+.aboutus-name {
+  font-size:1.1875em;
+  line-height:1.2em;
+  font-weight:300;
+}
+
+.aboutus-alias {
+  font-size:1.1875em;
+  line-height:1.2em;
+  font-weight:600;
+  color:#111;
+}
+
+.aboutus-member-desc {
+  margin-top:10px;
+  font-size:1.125em;
+  line-height:1.125em;
+  font-weight:300;
+}
+
+.aboutus-technology-container {
+  //width:80%;
+  text-align:center;
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  padding:2px 2px 2px 2px;
+  margin:3px 3px 3px 3px;
+  border-color:rgba(255,255,255,.5);
+  font-weight:300;
+}
+.aboutus-pict-background {
+  padding:2px 2px 2px 2px;
+  background-color:rgba(255,255,255,.5);
+  display:inline-block;
+}
+
+.aboutus-member .col-xs-3 {
+	width:33%;
+}
+
+.aboutus-member .col-xs-9 {
+	width:65%;
+}
+
+.member-container {
+  font-size:1.125em;
+  font-weight:400;
+  padding:6px 0px 6px 0px;
+  border:solid; 
+  border-width:2px;
+  border-radius:8px;
+  border-color:rgba(255,255,255,.5);
+  color:rgba(255,255,255,.9);
+  margin-bottom:10px;
+  margin-top:8px;
+  height:320px;
+}
+
+@media (min-width: 540px) {
+  .aboutus-intro {
+    font-size:1.4em;
+  }
+  .aboutus-member .col-xs-3 {
+	width:25%;
+  }
+
+  .aboutus-member .col-xs-9 {
+	width:75%;
+  }
+
+  .member-container {
+  	height:280px;
+  }
+}
+
+@media (min-width: 600px) {
+
+  .aboutus-member .col-xs-3 {
+	width:20%;
+  }
+
+  .aboutus-member .col-xs-9 {
+	width:80%;
+  }
+  .member-container {
+  	height:280px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .aboutus-intro {
+    font-size:1.4em;
+  }
+
+  .aboutus-member .col-xs-3 {
+	width:30%;
+  }
+
+  .aboutus-member .col-xs-9 {
+	width:70%;
+  }
+  .member-container {
+  	height:350px;
+  }
+}
+
+@media (min-width: 970px) {
+  .aboutus-intro {
+    font-size:1.5em;
+  }
+  .aboutus-member .col-xs-3 {
+	width:24%;
+  }
+
+  .aboutus-member .col-xs-9 {
+	width:76%;
+  }
+  .member-container {
+  	height:400px;
+  }
+}
+
+@media (min-width: 990px) {
+  .aboutus-intro {
+    font-size:1.5em;
+  }
+
+  .aboutus-member .col-xs-3 {
+	width:38%;
+  }
+
+  .aboutus-member .col-xs-9 {
+	width:62%;
+  }
+}
+
+@media (min-width: 1170px) {
+  .member-container {
+  	height:360px;
+  }
+}
