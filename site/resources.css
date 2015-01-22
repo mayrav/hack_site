@@ -1,0 +1,10 @@
+.resource-link {
+  //width:80%;
+  text-align:center;
+  border:solid;
+  border-width:1px;
+  border-radius:3px;
+  padding:2px 2px 2px 2px;
+  margin:3px 3px 3px 0px;
+  border-color:rgba(255,255,255,.5);
+}
