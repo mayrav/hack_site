@@ -19,3 +19,10 @@ angular.module("datasetService", ["ngResource"]).
                "/api/datasets/:_id" 
           );
       });
+angular.module("eventService",["ngResource"]).
+        factory("Event", function ($resource) {
+          return $resource(
+            "http://api.meetup.com/2/events?status=upcoming&order=time&limited_events=False&group_urlname=Code-For-Nova&desc=false&offset=0&photo-host=public&format=json&page=20&fields=&sig_id=11545665&sig=40fe4c201e2189b4c7be742fd6e221fd30c8ba43",
+             {callback:"JSON_CALLBACK"}, {"query": {method:"jsonp"}}
+             );
+        });
