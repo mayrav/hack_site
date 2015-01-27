@@ -259,7 +259,7 @@
               <div class="col-xs-8 lt-rt-col-pad events-container-text-reg">
                 {{events.results[0].name}}<br>
                 {{events.results[0].time | date :'shortDate'}} <br>
-                7:00pm - 9:00pm<br>
+                {{events.results[0].time | date :'shortTime'}} to {{events.results[0].time + events.results[0].duration | date :'shortTime'}}<br>
                 National Science Foundation
               </div>
               <div class="col-xs-4 lt-rt-col-pad" >
