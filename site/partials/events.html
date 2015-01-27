@@ -253,21 +253,24 @@
               Next Event
             </div>
           </div>
-          <div class="row zero-marg" >
-            <div class="col-xs-8 lt-rt-col-pad events-container-text-reg">
-              Civic Hacking Weekly Meetup<br>
-              10/2/14<br>
-              7:00pm - 9:00pm<br>
-              National Science Foundation
-            </div>
-            <div class="col-xs-4 lt-rt-col-pad" >
-              <div style="position:absolute;top:26px;">
-                <div style="margin:0px 0px 0px auto;">
-                  <div class="nav-btn next-event-rsvp">
-                    RSVP
-                  </div>
-                </div>              
-              </div>            
+          <div data-ng-controller="EventCtrl">
+            <div class="row zero-marg" >
+
+              <div class="col-xs-8 lt-rt-col-pad events-container-text-reg">
+                {{events.results[0].name}}<br>
+                {{events.results[0].time | date :'shortDate'}} <br>
+                7:00pm - 9:00pm<br>
+                National Science Foundation
+              </div>
+              <div class="col-xs-4 lt-rt-col-pad" >
+                <div style="position:absolute;top:26px;">
+                  <div style="margin:0px 0px 0px auto;">
+                    <div class="nav-btn next-event-rsvp">
+                      RSVP
+                    </div>
+                  </div>              
+                </div>            
+              </div>
             </div>
           </div>
           <div class="row zero-marg">
@@ -285,60 +288,39 @@
               All Upcoming Events
             </div>
           </div>
-          <div class="row zero-marg" >
-            <div class="col-xs-2 events-container-line-item-text" style="width:22%">
-              10/9/14
-            </div>
-            <div class="col-xs-7 events-container-line-item-text" style="width:52%">
-              Civic Hacking Weekly Meetup
-            </div>
-            <div class="col-xs-3 lt-rt-col-pad" style="padding:0px 20px 0px 20px;">
-              <div>
-                <div>
-                  <div class="nav-btn upcoming-event-rsvp">
-                    RSVP
-                  </div>
-                </div>              
-              </div>            
-            </div>
-          </div>
 
-          <div class="row zero-marg " style="margin:10px 0px 0px 0px;">
-            <div class="col-xs-2 events-container-line-item-text"  style="width:22%">
-              10/9/14
-            </div>
-            <div class="col-xs-7 events-container-line-item-text"  style="width:52%">
-              Node JS Study Group (Week 2)
-            </div>
-            <div class="col-xs-3 lt-rt-col-pad" style="padding:0px 20px 0px 20px;">
-              <div>
-                <div>
-                  <div class="nav-btn upcoming-event-rsvp">
-                    RSVP
-                  </div>
-                </div>   
-              </div>
-            </div>
-          </div>
 
-          <div class="row zero-marg" style="margin:10px 0px 0px 0px;">
-            <div class="col-xs-2 events-container-line-item-text"  style="width:22%">
-              10/16/14
-            </div>
-            <div class="col-xs-7 events-container-line-item-text"  style="width:52%">
-              Lightning Talks
-            </div>
-            <div class="col-xs-3 lt-rt-col-pad" style="padding:0px 20px 0px 20px;">
-              <div>
-                <div>
-                  <div class="nav-btn upcoming-event-rsvp">
-                    RSVP
+          <div data-ng-controller="EventCtrl">
+            <div data-ng-repeat="event in events.results | limitTo: 3">
+              <div class="row zero-marg"style="padding-bottom:10px;">
+
+                <div class="col-xs-2 events-container-line-item-text" style="width:20%">   
+                  {{event.time | date :'shortDate'}}
+                </div>
+                <div class="col-xs-7 events-container-line-item-text" style="width:52%">
+                  <div style="display:inline;">
+                    {{event.name}}
                   </div>
-                </div>   
+                  <div style="display:inline;padding-left:4px;">
+                    (7 to 9pm)
+                  </div>
+                  
+                </div>
+                <div class="col-xs-3 lt-rt-col-pad" style="padding:0px 20px 0px 20px;">
+                  <div>
+                    <div>
+                      <div class="nav-btn upcoming-event-rsvp">
+                        RSVP
+                      </div>
+                    </div>       
+                  </div>
+                </div>
+
               </div>
-            </div>
+            </div>  
           </div>
         </div>
+
       </div>
     </div>
 
