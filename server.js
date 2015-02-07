@@ -130,6 +130,7 @@ mongoose.connect( 'mongodb://'+ mongo_address + ':' + mongo_port +'/hackapp_data
 var Project = new mongoose.Schema({
   name: String,
   description: String,
+  help_text: String,
   github_url: String,
   production_url: String,
   demo_url: String
@@ -221,6 +222,7 @@ app.post( '/api/projects', requires_auth, function( request, response ) {
   var project = new ProjectModel({
     name: request.body.name,
     description: request.body.description,
+    help_text: request.body.help_text,
     github_url: request.body.github_url,
     demo_url:request.body.demo_url,
     production_url:request.body.production_url
