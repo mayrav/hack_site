@@ -8,6 +8,8 @@
     "mongoose": "^3.8.8",
     "mongodb": "^1.3.23",
     "socket.io": "^0.9.16",
+    "jsonwebtoken":"*",
+    "express-jwt":"*"
   },
   "devDependencies": {},
   "scripts": {
