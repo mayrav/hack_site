@@ -31,11 +31,7 @@ hackApp.config(['$routeProvider',
         templateUrl: 'partials/projects.html',
         controller: 'ProjectCtrl'
       }).
-       when('/eventtest', {
-        templateUrl: 'partials/eventtest.html',
-        controller: 'EventCtrl'
-      }).
-      otherwise({
-        redirectTo: '/home'
-      });
+        otherwise({
+          redirectTo: '/home'
+      })
   }]);
