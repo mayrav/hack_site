@@ -1,6 +1,4 @@
-var hackControllers = angular.module('hackControllers', ["resourceService","projectService","eventService"]);
- 
-hackControllers.controller('ResourceCtrl', function ($scope, $http, Resource) {
+var hackControllers = angular.module('hackControllers', ["hackServices"]).controller('ResourceCtrl', function ($scope, $http, Resource) {
   $scope.resources = Resource.query();
   $scope.addResource = function () {
   	var newResource = new Resource({name: $scope.newresource.name, description: $scope.newresource.description, link: $scope.newresource.link })
@@ -14,10 +12,7 @@ hackControllers.controller('ResourceCtrl', function ($scope, $http, Resource) {
   	$scope.resources.splice(item,1);
   };
 
-});
-
-
-hackControllers.controller('ProjectCtrl', function ($scope, $http, Project) {
+}).controller('ProjectCtrl', function ($scope, $http, Project) {
   $scope.projects = Project.query();
   $scope.addProject = function () {
   	var newProject = new Project({name: $scope.newproject.name, description: $scope.newproject.description, github_url: $scope.newproject.github_url, production_url: $scope.newproject.production_url, demo_url: $scope.newproject.demo_url })
@@ -31,11 +26,27 @@ hackControllers.controller('ProjectCtrl', function ($scope, $http, Project) {
   	$scope.projects.splice(item,1);
   };
 
-});
-
-hackControllers.controller('EventCtrl', function ($scope,$http, Event){
+}).controller('EventCtrl', function ($scope,$http, Event){
   $scope.events = Event.query();
-})
+}).controller('LoginCtrl', function ($scope, $http, $window, $location) {
+  $scope.message = '';
+  $scope.submit = function () {
+    $http
+      .post('/authenticate', $scope.user)
+      .success(function (data, status, headers, config) {
+        console.log("YAY!")
+        $window.sessionStorage.token = data.token;
+        $location.path("/");
+      })
+      .error(function (data, status, headers, config) {
+        // Erase the token if the user fails to log in
+        delete $window.sessionStorage.token;
+
+        // Handle login errors here
+        $scope.message = 'Error: Invalid user or password';
+      });
+  };
+});
 
 function HeaderCtrl($scope, $location) 
 { 
@@ -44,3 +55,4 @@ function HeaderCtrl($scope, $location)
         //return true;
     };
 }
+

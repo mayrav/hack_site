@@ -3,10 +3,34 @@ var application_root = __dirname,
   path = require( 'path' ), //Utilities for dealing with file paths
   mongoose = require( 'mongoose' ); //MongoDB integration
   io = require('socket.io'); // Websocket support
-var winston = require('winston');
-winston.add(winston.transports.File, { filename: 'hackapp.log', json: false});
-winston.remove(winston.transports.Console);
 
+
+if (!process.env.CODEFORNOVA_AUTH_SECRET) {
+  console.log("Need to set CODEFORNOVA_AUTH_SECRET environment variable");
+  process.exit(1);
+}
+else{
+  var auth_secret = process.env.CODEFORNOVA_AUTH_SECRET;
+}
+
+if (!process.env.CODEFORNOVA_ADMIN_USERNAME) {
+  console.log("Need to set CODEFORNOVA_ADMIN_USERNAME environment variable");
+  process.exit(1);
+}
+else{
+  var admin_username = process.env.CODEFORNOVA_ADMIN_USERNAME;
+}
+
+if (!process.env.CODEFORNOVA_ADMIN_PASSWORD) {
+  console.log("Need to set CODEFORNOVA_ADMIN_PASSWORD environment variable");
+  process.exit(1);
+}
+else{
+  var admin_password = process.env.CODEFORNOVA_ADMIN_PASSWORD;
+}
+
+var expressJwt = require('express-jwt');
+var jwt = require('jsonwebtoken');
 
 
 //Create server
@@ -29,6 +53,9 @@ var allowCrossDomain = function(req, res, next) {
 };
 app.enable("jsonp callback");
 // Configure server
+
+var requires_auth = expressJwt({secret: auth_secret});
+
 app.configure( function() {
   app.use(allowCrossDomain);
   //parses request body and populates request.body
@@ -45,18 +72,44 @@ app.configure( function() {
 
   //Show all errors in development
   app.use( express.errorHandler({ dumpExceptions: true, showStack: true }));
+  
+
 });
 
 //Start server
 var port = 8888;
+
+
+
 app.listen( port, function() {
-  winston.info('Express server listening on port ' + port + ' in ' + app.settings.env + ' mode');
+  console.log('Express server listening on port ' + port + ' in ' + app.settings.env + ' mode');
 })
+
+app.post('/authenticate', function (req, res) {
+  
+  if (!(req.body.username === admin_username && req.body.password === admin_password )) {
+    res.send(401, 'Wrong user or password');
+    return;
+  }
+
+
+
+  var token = jwt.sign({admin:true}, auth_secret, { expiresInMinutes: 60*5 });
+
+  res.json({ token: token });
+});
+
+
+
+
+
 
 // Routes
 app.get( '/api', function( request, response ) {
   response.send( 'HackApp API is running\r\n\r\n' );
 });
+
+
 
 
 //mongoose.connect( 'mongodb://localhost/hackapp_database' );
@@ -77,6 +130,7 @@ mongoose.connect( 'mongodb://'+ mongo_address + ':' + mongo_port +'/hackapp_data
 var Project = new mongoose.Schema({
   name: String,
   description: String,
+  help_text: String,
   github_url: String,
   production_url: String,
   demo_url: String
@@ -106,12 +160,12 @@ app.get( '/api/resources', function( request, response ) {
     if( !err ) {
       return response.json( resource ); // This is JSON. Do not, under any circumstances attempt to concatenate it with a string.
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
 });
 
-app.post( '/api/resources', function( request, response ) {
+app.post( '/api/resources',requires_auth,function( request, response ) {
   var resource = new ResourceModel({
     name: request.body.name,
     description: request.body.description,
@@ -119,9 +173,9 @@ app.post( '/api/resources', function( request, response ) {
   });
   resource.save( function( err ) {
     if( !err ) {
-      return winston.info( 'created' );
+      return console.log( 'created' );
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
   return response.send( resource );
@@ -133,21 +187,21 @@ app.get( '/api/resources/:id', function( request, response ) {
     if( !err ) {
       return response.send( resource );
     } else {
-      return winston.log( err );
+      return console.log( err );
     }
   });
 });
 
 
-app.delete( '/api/resources/:id', function( request, response ) {
+app.delete( '/api/resources/:id', requires_auth ,function( request, response ) {
 
   return ResourceModel.findByIdAndRemove( request.params.id, function( err, resource ) {
 
     if( !err ) {
-      winston.log( 'Resource removed' );
+      console.log( 'Resource removed' );
       return response.send( '' );
     } else {
-      winston.log( err );
+      console.log( err );
     }
   });
 });
@@ -159,24 +213,25 @@ app.get( '/api/projects', function( request, response ) {
     if( !err ) {
       return response.json( project ); // This is JSON. Do not, under any circumstances attempt to concatenate it with a string.
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
 });
 
-app.post( '/api/projects', function( request, response ) {
+app.post( '/api/projects', requires_auth, function( request, response ) {
   var project = new ProjectModel({
     name: request.body.name,
     description: request.body.description,
+    help_text: request.body.help_text,
     github_url: request.body.github_url,
     demo_url:request.body.demo_url,
     production_url:request.body.production_url
   });
   project.save( function( err ) {
     if( !err ) {
-      return winston.info( 'created' );
+      return console.log( 'created' );
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
   return response.send( project );
@@ -188,21 +243,22 @@ app.get( '/api/projects/:id', function( request, response ) {
     if( !err ) {
       return response.send( project );
     } else {
-      return winston.log( err );
+      return console.log( err );
     }
   });
 });
 
 
-app.delete( '/api/projects/:id', function( request, response ) {
+app.delete( '/api/projects/:id', requires_auth, function( request, response ) {
+
 
   return ProjectModel.findByIdAndRemove( request.params.id, function( err, project ) {
 
     if( !err ) {
-      winston.log( 'Project removed' );
+      console.log( 'Project removed' );
       return response.send( '' );
     } else {
-      winston.log( err );
+      console.log( err );
     }
   });
 });

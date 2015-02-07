@@ -4,6 +4,7 @@
 		<p ng-show="project.github_url">Github: <a href="{{project.github_url}}">{{project.github_url}}</a></p>
 		<p ng-show="project.demo_url">Demo Site: <a href="{{project.demo_url}}">{{project.demo_url}}</a></p>
 		<p ng-show="project.production_url">Production Site: <a href="{{project.github_url}}">{{project.production_url}}</a></p>
+		<button  data-ng-click="deleteProject(project._id,$index)" class="btn btn-danger">Delete</button>
 		
 	</div>
 	<h2>Add Project</h2>

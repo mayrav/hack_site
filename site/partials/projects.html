@@ -1,4 +1,4 @@
-<div class="container-fluid" style="max-width:1200px;padding:0px 0px 0px 0px;">
+<div class="container-fluid" style="max-width:1200px;padding:0px 0px 0px 0px;" ng-controller="ProjectCtrl">
   <div class="outer">
  <!--     XS     --> 
     <div id="xs">
@@ -385,7 +385,7 @@
             <div class="col-xs-12 lt-rt-col-pad wanna-help-container" style="margin-bottom:12px;margin-top:8px;">
               <div class="row zero-marg">
                 <div class="col-xs-12 lt-rt-col-pad wanna-help-title">
-                  WANNA HELP?
+                  WANNA HELP? 
                 </div>
               </div>
               <div class="row zero-marg">
@@ -405,11 +405,9 @@
           </div>
         </div>        
       </div>
-
-
-
-
-      
+      <div ng-repeat="project in projects">
+        <project-showcase></project-showcase>
+      </div>
     </div>
 
 
