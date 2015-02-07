@@ -2,3 +2,4 @@
 node_modules/
 .bin/
 hackapp.log
+npm-debug.log
