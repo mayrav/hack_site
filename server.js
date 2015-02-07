@@ -3,9 +3,6 @@ var application_root = __dirname,
   path = require( 'path' ), //Utilities for dealing with file paths
   mongoose = require( 'mongoose' ); //MongoDB integration
   io = require('socket.io'); // Websocket support
-var winston = require('winston');
-winston.add(winston.transports.File, { filename: 'hackapp.log', json: false});
-winston.remove(winston.transports.Console);
 
 
 
@@ -45,18 +42,25 @@ app.configure( function() {
 
   //Show all errors in development
   app.use( express.errorHandler({ dumpExceptions: true, showStack: true }));
+  
+
 });
 
 //Start server
 var port = 8888;
+
+
+
 app.listen( port, function() {
-  winston.info('Express server listening on port ' + port + ' in ' + app.settings.env + ' mode');
+  console.log('Express server listening on port ' + port + ' in ' + app.settings.env + ' mode');
 })
 
 // Routes
 app.get( '/api', function( request, response ) {
   response.send( 'HackApp API is running\r\n\r\n' );
 });
+
+
 
 
 //mongoose.connect( 'mongodb://localhost/hackapp_database' );
@@ -106,7 +110,7 @@ app.get( '/api/resources', function( request, response ) {
     if( !err ) {
       return response.json( resource ); // This is JSON. Do not, under any circumstances attempt to concatenate it with a string.
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
 });
@@ -119,9 +123,9 @@ app.post( '/api/resources', function( request, response ) {
   });
   resource.save( function( err ) {
     if( !err ) {
-      return winston.info( 'created' );
+      return console.log( 'created' );
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
   return response.send( resource );
@@ -133,7 +137,7 @@ app.get( '/api/resources/:id', function( request, response ) {
     if( !err ) {
       return response.send( resource );
     } else {
-      return winston.log( err );
+      return console.log( err );
     }
   });
 });
@@ -144,10 +148,10 @@ app.delete( '/api/resources/:id', function( request, response ) {
   return ResourceModel.findByIdAndRemove( request.params.id, function( err, resource ) {
 
     if( !err ) {
-      winston.log( 'Resource removed' );
+      console.log( 'Resource removed' );
       return response.send( '' );
     } else {
-      winston.log( err );
+      console.log( err );
     }
   });
 });
@@ -159,7 +163,7 @@ app.get( '/api/projects', function( request, response ) {
     if( !err ) {
       return response.json( project ); // This is JSON. Do not, under any circumstances attempt to concatenate it with a string.
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
 });
@@ -174,9 +178,9 @@ app.post( '/api/projects', function( request, response ) {
   });
   project.save( function( err ) {
     if( !err ) {
-      return winston.info( 'created' );
+      return console.log( 'created' );
     } else {
-      return winston.info( err );
+      return console.log( err );
     }
   });
   return response.send( project );
@@ -188,7 +192,7 @@ app.get( '/api/projects/:id', function( request, response ) {
     if( !err ) {
       return response.send( project );
     } else {
-      return winston.log( err );
+      return console.log( err );
     }
   });
 });
@@ -199,10 +203,10 @@ app.delete( '/api/projects/:id', function( request, response ) {
   return ProjectModel.findByIdAndRemove( request.params.id, function( err, project ) {
 
     if( !err ) {
-      winston.log( 'Project removed' );
+      console.log( 'Project removed' );
       return response.send( '' );
     } else {
-      winston.log( err );
+      console.log( err );
     }
   });
 });
