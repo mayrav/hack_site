@@ -7,38 +7,39 @@ var hackApp = angular.module('hackApp', [
  
 
 
-hackApp.config(['$routeProvider',
-  function($routeProvider) {
+hackApp.config(['$routeProvider','$locationProvider',
+  function($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
     $routeProvider.
       when('/home', {
-        templateUrl: 'partials/home.html',
+        templateUrl: '/static/partials/home.html',
       }).
       when('/login', {
-        templateUrl: 'partials/login.html',
+        templateUrl: '/static/partials/login.html',
         controller: 'LoginCtrl'
       }).
       when('/aboutus', {
-        templateUrl: 'partials/aboutus.html',
+        templateUrl: '/static/partials/aboutus.html',
       }).
       when('/events', {
-        templateUrl: 'partials/events.html',
+        templateUrl: '/static/partials/events.html',
       }).
       when('/resources', {
-        templateUrl: 'partials/resources.html',
+        templateUrl: '/static/partials/resources.html',
         controller: 'ResourceCtrl'
       }).
       when('/admin/resources', {
-        templateUrl: 'partials/resources_admin.html',
+        templateUrl: '/static/partials/resources_admin.html',
         controller: 'ResourceCtrl',
         resolve: {loginRequired:loginRequired}
       }).
        when('/admin/projects', {
-        templateUrl: 'partials/projects_admin.html',
+        templateUrl: '/static/partials/projects_admin.html',
         controller: 'ProjectCtrl',
         resolve: {loginRequired:loginRequired}
       }).
        when('/projects', {
-        templateUrl: 'partials/projects.html',
+        templateUrl: '/static/partials/projects.html',
         controller: 'ProjectCtrl'
       }).
         otherwise({

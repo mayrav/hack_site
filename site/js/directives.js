@@ -4,7 +4,7 @@ app = angular.module("hackDirectives",[])
 app.directive("technologyContainer", function(){
 		return { 
 			restrict: "E",
-			templateUrl: 'partials/projects_page/technology-container.html'
+			templateUrl: '/static/partials/projects_page/technology-container.html'
 	}
 }
 );
@@ -12,7 +12,7 @@ app.directive("technologyContainer", function(){
 app.directive("participate", function(){
 		return { 
 			restrict: "E",
-			templateUrl: 'partials/projects_page/participate.html'
+			templateUrl: '/static/partials/projects_page/participate.html'
 	}
 }
 );
@@ -20,7 +20,7 @@ app.directive("participate", function(){
 app.directive("projectShowcase", function(){
 		return { 
 			restrict: "E",
-			templateUrl: 'partials/projects_page/project-showcase.html'
+			templateUrl: '/static/partials/projects_page/project-showcase.html'
 	}
 }
 );

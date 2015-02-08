@@ -12,7 +12,7 @@
   }
 
   .row-one-image {
-    background-image:url('fimages/discovery01.jpg');
+    background-image:url('/static/images/discovery01.jpg');
     height:126px;
   }
 
